@@ -1,0 +1,38 @@
+Thu, 27 Jul 2017 11:33:23 main.py[line:25] INFO 从数据库中查询到1条记录，分别为：
+[(3, '192.168.216.128', 8, '')]
+Thu, 27 Jul 2017 11:33:23 transport.py[line:1636] INFO Connected (version 2.0, client OpenSSH_7.1)
+Thu, 27 Jul 2017 11:33:23 transport.py[line:1636] INFO Authentication (keyboard-interactive) successful!
+Thu, 27 Jul 2017 11:33:24 vmcmd.py[line:56] INFO 对ESXi主机（192.168.216.128）：执行命令：
+vim-cmd vmsvc/power.off 8，结果：
+Powering off VM:
+Thu, 27 Jul 2017 11:33:24 main.py[line:71] INFO 已发出关机请求，开始等待30秒
+Thu, 27 Jul 2017 11:33:54 transport.py[line:1636] INFO Connected (version 2.0, client OpenSSH_7.1)
+Thu, 27 Jul 2017 11:33:54 transport.py[line:1636] INFO Authentication (keyboard-interactive) successful!
+Thu, 27 Jul 2017 11:33:55 vmcmd.py[line:56] INFO 对ESXi主机（192.168.216.128）：执行命令：
+vim-cmd vmsvc/power.on 8，结果：
+Powering on VM:
+Thu, 27 Jul 2017 11:33:55 main.py[line:42] INFO 成功从数据库中删除一条记录：
+(3, '192.168.216.128', 8, '')
+Thu, 27 Jul 2017 11:33:55 main.py[line:27] INFO 并未从数据库中查询到记录，没有主机需要关机
+Thu, 27 Jul 2017 11:33:55 main.py[line:76] INFO 本次查询结束，开始休眠120秒
+Thu, 27 Jul 2017 11:35:56 main.py[line:27] INFO 并未从数据库中查询到记录，没有主机需要关机
+Thu, 27 Jul 2017 11:35:56 main.py[line:76] INFO 本次查询结束，开始休眠120秒
+Fri, 28 Jul 2017 09:43:43 main.py[line:29] INFO 并未从数据库中查询到记录，没有主机需要关机
+Fri, 28 Jul 2017 09:43:43 main.py[line:89] INFO 本次查询结束，开始休眠120秒
+Fri, 28 Jul 2017 09:53:32 main.py[line:27] INFO 从数据库中查询到1条记录，分别为：
+[(4, '192.168.216.128', None, 'ubuntu1')]
+Fri, 28 Jul 2017 09:53:32 transport.py[line:1636] INFO Connected (version 2.0, client OpenSSH_7.1)
+Fri, 28 Jul 2017 09:53:32 transport.py[line:1636] INFO Authentication (keyboard-interactive) successful!
+Fri, 28 Jul 2017 09:53:33 vmcmd.py[line:66] INFO 对ESXi主机（192.168.216.128）：执行命令：
+vim-cmd vmsvc/getallvm | grep ubuntu1 | cut -d" " -f 1 | xargs -0 -n 1 vim-cmd vmsvc/power.off，结果：
+Powering off VM:
+Fri, 28 Jul 2017 09:53:33 main.py[line:84] INFO 已发出关机请求，开始等待30秒
+Fri, 28 Jul 2017 09:54:03 transport.py[line:1636] INFO Connected (version 2.0, client OpenSSH_7.1)
+Fri, 28 Jul 2017 09:54:03 transport.py[line:1636] INFO Authentication (keyboard-interactive) successful!
+Fri, 28 Jul 2017 09:54:04 vmcmd.py[line:66] INFO 对ESXi主机（192.168.216.128）：执行命令：
+vim-cmd vmsvc/getallvm | grep ubuntu1 | cut -d" " -f 1 | xargs -0 -n 1 vim-cmd vmsvc/power.on，结果：
+Powering on VM:
+Fri, 28 Jul 2017 09:54:05 main.py[line:44] INFO 成功从数据库中删除一条记录：
+(4, '192.168.216.128', None, 'ubuntu1')
+Fri, 28 Jul 2017 09:54:05 main.py[line:29] INFO 并未从数据库中查询到记录，没有主机需要关机
+Fri, 28 Jul 2017 09:54:05 main.py[line:89] INFO 本次查询结束，开始休眠120秒

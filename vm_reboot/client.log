@@ -1,0 +1,4 @@
+2017-08-18 14:12:55,212 vmreboot_client_3.5 vmreboot_client_3.5.py get_power_state[line:78] INFO get power state ubuntu1:off
+2017-08-18 14:13:36,673 vmreboot_client_3.5 vmreboot_client_3.5.py power_manage[line:51] INFO poweron ubuntu1 success
+2017-08-18 14:13:55,604 vmreboot_client_3.5 vmreboot_client_3.5.py power_manage[line:51] INFO poweroff ubuntu1 success
+2017-08-22 10:44:38,165 vmreboot_client_3.5 vmreboot_client_3.5.py get_power_state[line:78] INFO get power state ubuntu1:off

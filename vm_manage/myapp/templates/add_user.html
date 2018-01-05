@@ -1,0 +1,122 @@
+{% extends "nav.html" %}
+{% block admin %}
+<div class="panel panel-info">
+    <div class="panel-heading">填写信息</div>
+    <div class="panel-body">
+        <div class="form-group">
+            <label for="username">用户名</label>
+            <input type="text" class="form-control" id="username" placeholder="Username" style="width: 50%;">
+        </div>
+        <div class="form-group">
+            <label for="password">密码</label>
+            <input type="password" class="form-control" id="password" placeholder="Password" style="width: 50%;">
+        </div>
+        <div class="form-group">
+            <label for="password_repeat">重复密码</label>
+            <input type="password" class="form-control" id="password_repeat" placeholder="Password" style="width: 50%;">
+        </div>
+        <table class="table" style="text-align: center;vertical-align: middle;">
+            <thead>
+            <tr>
+                <td>部门</td>
+                <td>权限</td>
+            </tr>
+            </thead>
+            <tbody>
+            {% for department in department_list %}
+            <tr>
+                <td style="vertical-align: middle">{{ department["name"] }}</td>
+                <td>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" d_id="{{ department['id'] }}" name="permission" value="off"/>关机
+                        </label>
+                        <label>
+                            <input type="checkbox" d_id="{{ department['id'] }}" name="permission" value="on"/>开机
+                        </label>
+                        <label>
+                            <input type="checkbox" d_id="{{ department['id'] }}" name="permission" value="reboot"/>重启
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-default" onclick="add_user()">提交</button>
+    </div>
+</div>
+
+<script>
+    function add_user() {
+        var username = $.trim($("#username").val())
+        var password = $.trim($("#password").val())
+        var password_repeat = $.trim($("#password_repeat").val())
+        if (username == null || password == null || password_repeat == null ||
+            username == "" || password == "" || password_repeat == "") {
+            alert("表单不能为空")
+        } else {
+            var form_data = {}
+            form_data["username"] = username
+            $.ajax({
+                type: "POST",
+                url: "{{ url_for('check_username') }}",
+                data: form_data,
+                dataType: "json",
+                success: check_and_submit
+            })
+        }
+    }
+
+    function check_and_submit(result) {
+        if (result != null && result != "") {
+            if (result["result"] == "success") {
+                if (result["exist"] == "yes") {
+                    alert("用户名已存在")
+                } else {
+                    if (password != password_repeat) {
+                        alert("两次输入的密码不一致")
+                    } else {
+                        var permission_dict = {};
+                        $('input[name="permission"]:checked').each(function () {
+                            var $checkbox = $(this)
+                            if (permission_dict[$checkbox.attr("d_id")] == undefined
+                                || permission_dict[$checkbox.attr("d_id")] == null) {
+                                permission_dict[$checkbox.attr("d_id")] = $checkbox.val()
+                            } else {
+                                var temp = permission_dict[$checkbox.attr("d_id")]
+                                temp = temp + "," + $checkbox.val()
+                                permission_dict[$checkbox.attr("d_id")] = temp
+                            }
+                        });
+                        var data = {}
+                        data["username"] = username
+                        data["password"] = password
+                        data["permission_dict"] = permission_dict
+                        $.ajax({
+                            type: "POST",
+                            url: "{{ url_for('add_user') }}",
+                            data: JSON.stringify(data),
+                            contentType: 'application/json; charset=UTF-8',
+                            dataType: "json",
+                            success: function (data) {
+                                if (data != null && data != "") {
+                                    if (data["result"] == "success") {
+                                        alert("成功添加管理员")
+                                        $("#username").val("")
+                                        $("#password").val("")
+                                        $("#password_repeat").val("")
+                                        $('input[name="permission"]').prop("checked", false);
+                                    } else {
+                                        alert("添加管理员失败：" + data["errorinfo"])
+                                    }
+                                }
+                            }
+                        })
+                    }
+                }
+            }
+        }
+    }
+</script>
+{% endblock %}

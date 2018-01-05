@@ -1,0 +1,19 @@
+{% extends "head.html" %}
+{% block body %}
+<div class="col-md-2">
+    <div class="list-group">
+        <a href="{{ url_for('change_passwd_page') }}" class="list-group-item {{ active2.get('2','') }}">密码修改</a>
+        {% if username == "root" %}
+        <a href="{{ url_for('add_user_page') }}" class="list-group-item {{ active2.get('1','') }}">添加管理员</a>
+        <a href="{{ url_for('change_permission_page') }}" class="list-group-item {{ active2.get('3','') }}">权限管理</a>
+        <a href="{{ url_for('department_manage_page') }}" class="list-group-item {{ active2.get('4','') }}">部门管理</a>
+        <a href="{{ url_for('staff_manage_page') }}" class="list-group-item {{ active2.get('5','') }}">员工管理</a>
+        <a href="{{ url_for('vm_manage_page') }}" class="list-group-item {{ active2.get('6','') }}">添加和移除虚拟机</a>
+        {% endif %}
+    </div>
+</div>
+<div class="col-md-10">
+{% block admin %}
+{% endblock %}
+</div>
+{% endblock %}

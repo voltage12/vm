@@ -1,0 +1,277 @@
+{% extends "head.html" %}
+{% block body %}
+
+<div class="col-md-2">
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="{{ url_for('index') }}">全部虚拟机</a>
+                </h4>
+            </div>
+        </div>
+        {% for department in department_list %}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion"
+                                           href="#{{ department['name'] }}">{{ department["name"] }}</a>
+                </h4>
+            </div>
+            <div id="{{ department['name'] }}" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <ul class="list-unstyled">
+                        <li><a href="javascript:void(0)" onclick="get_vm_list_by_department(this)"
+                               d_id="{{ department['id'] }}">全部虚拟机</a></li>
+                    {% for staff in staff_dict[department['name']] %}
+                        <li><a href="javascript:void(0)" onclick="get_vm_list(this)" s_id="{{ staff['id'] }}">{{ staff['name'] }}</a></li>
+                    {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="col-md-10">
+    <table class="table" style="text-align: center">
+        <tbody id="vm_table">
+            {% for vm in vm_list %}
+            {% if loop.index0 % 4 == 0 %}
+            <tr>
+            {% endif %}
+                <td>
+                    {% if power_state_dict[vm["id"]] == "on" %}
+                    <img src="{{ url_for('static', filename='img/pic_on.jpg') }}" width="100px"
+                         height="100px" id="{{ vm['id'] }}" onclick="refresh_power_state(this)"/>
+                    {% else %}
+                    <img src="{{ url_for('static', filename='img/pic_off.jpg') }}" width="100px"
+                         height="100px" id="{{ vm['id']}}" onclick="refresh_power_state(this)"/>
+                    {% endif %}
+                    <div>
+                        <span>{{ vm["name"] }}</span><br/>
+                        {% if "off" in permission_dict[vm["d_id"]] %}
+                        <button type="button" class="btn btn-danger btn-xs"
+                                v_id="{{ vm['id'] }}" onclick="poweroff(this)">关机</button>
+                        {% else %}
+                        <button type="button" class="btn btn-danger btn-xs" disabled="disabled">关机</button>
+                        {% endif %}
+                        {% if "on" in permission_dict[vm["d_id"]] %}
+                        <button type="button" class="btn btn-primary btn-xs"
+                                v_id="{{ vm['id'] }}" onclick="poweron(this)">开机</button>
+                        {% else %}
+                        <button type="button" class="btn btn-primary btn-xs" disabled="disabled">开机</button>
+                        {% endif %}
+                        {% if "reboot" in permission_dict[vm["d_id"]] %}
+                        <button type="button" class="btn btn-warning btn-xs"
+                                v_id="{{ vm['id'] }}" onclick="reboot(this)">重启</button>
+                        {% else %}
+                        <button type="button" class="btn btn-warning btn-xs" disabled="disabled">重启</button>
+                        {% endif %}
+                    </div>
+                    <input type="checkbox" name="selected_id" value="{{ vm['id'] }}"/>
+                </td>
+            {% if loop.index0 % 4 == 3 %}
+            </tr>
+        </tbody>
+        {% endif %}
+        {% else %}
+            未从数据库查询到数据
+        {% endfor %}
+    </table>
+    <hr/>
+    <button type="button" class="btn btn-default" onclick="select_all()" style="width: 68px">全 选</button>
+    <button type="button" class="btn btn-default" onclick="select_all_reverse()">全不选</button>
+    <button type="button" class="btn btn-primary" onclick="batch_powermanage('on')" style="width: 68px">开 机</button>
+    <button type="button" class="btn btn-danger" onclick="batch_powermanage('off')" style="width: 68px">关 机</button>
+</div>
+
+<script>
+    function refresh_power_state(obj) {
+        var v_id = $(obj).attr("id")
+        var data = {"v_id":v_id}
+        $.ajax({
+            type:"POST",
+            url:"{{ url_for('get_vm_power_state') }}",
+            data:data,
+            dataType:"json",
+            success:function (data) {
+                if (data != null && data != ""){
+                    if (data["result"] == "success"){
+                        if (data["state"] == "on"){
+                            $(obj).attr("src", "{{ url_for('static', filename='img/pic_on.jpg') }}")
+                        }else{
+                            $(obj).attr("src", "{{ url_for('static', filename='img/pic_off.jpg') }}")
+                        }
+                    }else{
+                        alert("fail:" + data["errorinfo"])
+                    }
+                }
+            }
+        })
+    }
+    
+    function batch_powermanage(action) {
+        var selected_id = [];
+        $('input[name="selected_id"]:checked').each(function () {
+            selected_id.push($(this).val());
+        });
+        var idstr = selected_id.join(',');
+        if (idstr == null || idstr == '') {
+            alert("请选择需要操作的虚拟机");
+        } else {
+            data = {"selected_id":idstr, "action":action}
+            $.ajax({
+                type:"POST",
+                url:"{{ url_for('batch_powermanage') }}",
+                data:data,
+                dataType:"json",
+                success:function (data) {
+                    power_state_dict = data["power_state_dict"]
+                    if (power_state_dict == null || power_state_dict == undefined)
+                        return
+                    success_list = data["success_list"]
+                    fail_list = data["fail_list"]
+                    for (var v_id in power_state_dict){
+                        if (power_state_dict[v_id] == "on"){
+                            $("#"+v_id).attr("src", "{{ url_for('static', filename='img/pic_on.jpg') }}")
+                        }else{
+                            $("#"+v_id).attr("src", "{{ url_for('static', filename='img/pic_off.jpg') }}")
+                        }
+                    }
+                    alert("操作成功："+success_list+"\n操作失败："+fail_list)
+                }
+            })
+        }
+    }
+
+    function select_all() {
+        $('input[name="selected_id"]').prop("checked", true);
+        // $('input[name="selectId"]').prop("checked", false);
+    }
+
+    function select_all_reverse() {
+        $('input[name="selected_id"]').prop("checked", false);
+    }
+
+    function powermanage(obj, action) {
+        var $button = $(obj)
+        var target_url = "{{ url_for('powermanage') }}"
+        var v_id = $button.attr("v_id")
+        var data = {"v_id":v_id}
+        data["action"] = action
+        $.ajax({
+            type:"POST",
+            url:target_url,
+            data:data,
+            dataType:"json",
+            success:function (data) {
+                if (data != null && data != ""){
+                    if (data["result"] == "success"){
+                        if (action == "on"){
+                            $("#"+v_id).attr("src", "{{ url_for('static', filename='img/pic_on.jpg') }}")
+                        }else if(action == "off"){
+                            $("#"+v_id).attr("src", "{{ url_for('static', filename='img/pic_off.jpg') }}")
+                        }else{
+                            $("#"+v_id).attr("src", "{{ url_for('static', filename='img/pic_on.jpg') }}")
+                            alert("重启成功")
+                        }
+                    }else{
+                        alert("fail:" + data["errorinfo"])
+                    }
+                }
+            }
+        })
+    }
+
+    function poweron(obj) {
+        powermanage(obj, "on")
+    }
+
+    function poweroff(obj) {
+        powermanage(obj, "off")
+    }
+
+    function reboot(obj) {
+        powermanage(obj, "reboot")
+    }
+
+    function get_vm_list(obj) {
+        var $staff = $(obj)
+        var s_id = $staff.attr("s_id")
+        var data = {"s_id":s_id}
+        $.ajax({
+            type:"POST",
+            url:"{{ url_for('getvmlist') }}",
+            data:data,
+            dataType:"json",
+            success:insert_table
+        })
+    }
+
+    function get_vm_list_by_department(obj) {
+        var $department = $(obj)
+        var d_id = $department.attr("d_id")
+        var data = {"d_id":d_id}
+        $.ajax({
+            type:"POST",
+            url:"{{ url_for('getvmlist') }}",
+            data:data,
+            dataType:"json",
+            success:insert_table
+        })
+    }
+
+    function insert_table(data) {
+        if(data != null && data != ""){
+            var $table = $("#vm_table")
+            $table.html("")
+            var $current_tr
+            var permission_dict = data["permission_dict"]
+            var vm_list = data["vm_list"]
+            var power_state_dict = data["power_state_dict"]
+            for(var i in vm_list){
+                if (i % 4 == 0){
+                    $current_tr = $(document.createElement("tr"))
+                    $table.append($current_tr)
+                }
+                var $new_td = $(document.createElement("td"))
+                var $new_img = $(document.createElement("img"))
+                var $new_div = $(document.createElement("div"))
+                if (power_state_dict[vm_list[i]["id"]] == "on"){
+                    $new_img.attr("src", "{{ url_for('static', filename='img/pic_on.jpg') }}")
+                }else{
+                    $new_img.attr("src", "{{ url_for('static', filename='img/pic_off.jpg') }}")
+                }
+                $new_img.attr("width", "100px")
+                $new_img.attr("height", "100px")
+                $new_img.attr("id", vm_list[i]["id"])
+                $new_img.attr("onclick", "refresh_power_state(this)")
+                $new_td.append($new_img)
+                $new_div.append("<span>" + vm_list[i]["name"] + "</span><br/>")
+
+                if(permission_dict[vm_list[i]["d_id"]].indexOf("off") != -1){
+                    $new_div.append($('<button type="button" class="btn btn-danger btn-xs" onclick="poweroff(this)">关机</button>').attr("v_id", vm_list[i]["id"]))
+                }else{
+                    $new_div.append('<button type="button" class="btn btn-danger btn-xs" disabled="disabled">关机</button>')
+                }
+                $new_div.append("&nbsp;")
+                if(permission_dict[vm_list[i]["d_id"]].indexOf("on") != -1){
+                    $new_div.append($('<button type="button" class="btn btn-primary btn-xs" onclick="poweron(this)">开机</button>').attr("v_id", vm_list[i]["id"]))
+                }else{
+                    $new_div.append('<button type="button" class="btn btn-primary btn-xs" disabled="disabled">开机</button>')
+                }
+                $new_div.append("&nbsp;")
+                if(permission_dict[vm_list[i]["d_id"]].indexOf("reboot") != -1){
+                    $new_div.append($('<button type="button" class="btn btn-warning btn-xs" onclick="reboot(this)">重启</button>').attr("v_id", vm_list[i]["id"]))
+                }else{
+                    $new_div.append('<button type="button" class="btn btn-warning btn-xs" disabled="disabled">重启</button>')
+                }
+                $new_td.append($new_div[0])
+                $new_td.append($("<input type='checkbox' name='selected_id'>").val(vm_list[i]["id"]))
+                $current_tr.append($new_td[0])
+            }
+        }
+    }
+</script>
+{% endblock %}
+

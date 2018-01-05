@@ -1,0 +1,150 @@
+{% extends "nav.html" %}
+{% block admin %}
+<div class="panel panel-info">
+    <div class="panel-heading">添加或删除部门</div>
+    <div class="panel-body">
+        <table class="table" style="width: 50%">
+            <tbody>
+                {% for department in department_list %}
+                <tr>
+                    <td style="vertical-align: middle">{{ department["name"] }}</td>
+                    <td>
+                        <button type="button" class="btn btn-danger btn-sm"
+                                d_id="{{ department['id'] }}" onclick="delete_department(this)">删除</button>
+                        &nbsp;
+                        <button type="button" class="btn btn-primary btn-sm"
+                                d_id="{{ department['id'] }}" onclick="display_form(this)">修改名称</button>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <hr/>
+        新增部门<br/><br/>
+        <div class="form-group" style="width: 50%">
+            <input type="text" class="form-control" id="department_name" name="department_name" placeholder="部门名">
+        </div>
+        <button type="button" class="btn btn-default" onclick="add_department()">提交</button>
+    </div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal" style="display:none"
+        id="bt">L</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">修改部门名称</h4>
+            </div>
+            <div class="modal-body">
+                <input id="d_id" style="display: none">
+                <div class="form-group">
+                    <label for="d_name">部门名称</label>
+                    <input type="text" class="form-control" id="d_name" placeholder="部门名称">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="bt_close">关闭</button>
+                <button type="button" class="btn btn-primary" onclick="update_department()">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function delete_department(obj) {
+        if (confirm("删除部门将会删除此部门中的所有员工以及虚拟机，确定删除吗")) {
+            var $button = $(obj)
+            var d_id = $button.attr("d_id")
+            var data = {}
+            data["d_id"] = d_id
+            console.log(data)
+            $.ajax({
+                type:"POST",
+                url:"{{ url_for('delete_department') }}",
+                data: data,
+                dataType:"json",
+                success:function (data) {
+                    if (data != null && data != ""){
+                        if (data["result"] == "success"){
+                            alert("删除部门成功")
+                            location.reload(true)
+                        }else{
+                            alert("删除部门失败：" + data["errorinfo"])
+                        }
+                    }
+                }
+            })
+        }
+    }
+
+    function add_department() {
+        var department_name = $.trim($("#department_name").val())
+        if (department_name == ""){
+            alert("部门名不能为空")
+        }else{
+            var data = {}
+            data["department_name"] = department_name
+            $.ajax({
+                type:"POST",
+                url:"{{ url_for('add_department') }}",
+                data: data,
+                dataType:"json",
+                success:function (data) {
+                    if (data != null && data != ""){
+                        if (data["result"] == "success"){
+                            alert("添加部门成功")
+                            location.reload(true)
+                        }else{
+                            alert("添加部门失败：" + data["errorinfo"])
+                        }
+                    }
+                }
+            })
+        }
+    }
+
+    function display_form(obj) {
+        var $button = $(obj)
+        var d_id = $button.attr("d_id")
+        $("#d_id").val(d_id)
+        $("#bt").click()
+    }
+
+    function update_department() {
+        var d_id = $("#d_id").val()
+        var d_name = $.trim($("#d_name").val())
+        if (d_name == null || d_name == ""){
+            alert("部门名不能为空")
+        }else{
+            var data = {}
+            data["d_id"] = d_id
+            data["d_name"] = d_name
+            $.ajax({
+                type: "POST",
+                url: "{{ url_for('update_department') }}",
+                data: data,
+                dataType: "json",
+                success: function (data) {
+                    if (data != null && data != "") {
+                        if (data["result"] == "success") {
+                            alert("修改成功")
+                            $("#bt_close").click()
+                            $("#d_name").val("")
+                            $("#d_id").val("")
+                            location.reload(true)
+                        } else {
+                            alert("修改失败" + data["errorinfo"])
+                        }
+                    }
+                }
+            })
+        }
+    }
+</script>
+{% endblock %}

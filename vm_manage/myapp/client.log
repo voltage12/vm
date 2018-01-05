@@ -1,0 +1,21 @@
+2017-08-22 10:48:34,102 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-31 09:25:59,874 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-31 09:25:59,874 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-31 09:40:50,954 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-31 09:40:50,954 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-31 09:43:27,016 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-31 09:43:27,016 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-31 09:47:24,260 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-31 09:47:24,260 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-31 09:48:22,330 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweron ubuntu1 success
+2017-08-31 09:48:22,330 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweron ubuntu1 success
+2017-08-31 09:52:57,148 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweron ubuntu1 success
+2017-08-31 09:52:57,148 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweron ubuntu1 success
+2017-08-31 09:54:23,443 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweroff ubuntu1 success
+2017-08-31 09:54:23,443 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweroff ubuntu1 success
+2017-08-31 09:57:18,886 vmreboot_client vmreboot_client.py power_manage[line:46] ERROR poweroff ubuntu1 failed
+2017-08-31 09:57:18,886 vmreboot_client vmreboot_client.py power_manage[line:46] ERROR poweroff ubuntu1 failed
+2017-08-31 10:06:13,792 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-31 10:06:13,792 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-09-01 09:58:37,877 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-09-01 09:58:37,877 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off

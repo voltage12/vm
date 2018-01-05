@@ -1,0 +1,281 @@
+{% extends "nav.html" %}
+{% block admin %}
+<div class="panel panel-info">
+    <div class="panel-heading">添加或删除虚拟机</div>
+    <div class="panel-body">
+        <div class="form-group">
+            <select class="form-control" id="d_id" style="width: 30%" onchange="select_change(this)">
+                <option value="-1" selected="selected">请选择部门</option>
+                {% for department in department_list %}
+                <option value="{{ department['id'] }}">{{ department["name"] }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <table class="table" style="width: 60%">
+            <thead>
+            <tr >
+                <td>主机IP</td>
+                <td>虚拟机名</td>
+                <td>所属部门</td>
+                <td>所属员工</td>
+                <td>删除修改</td>
+            </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+        <br/>
+        <div class="form-group">
+            <label for="new_ip">主机ip</label>
+            <input type="text" id="new_ip" class="form-control" style="width: 30%">
+        </div>
+        <div class="form-group">
+            <label for="new_name">虚拟机名</label>
+            <input type="text" id="new_name" class="form-control" style="width: 30%">
+        </div>
+        <div class="form-group">
+            <select class="form-control" id="s_id" style="width: 30%">
+            </select>
+        </div>
+        <button type="button" class="btn btn-default" onclick="add_vm()">添加虚拟机</button>
+    </div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal" style="display:none"
+        id="bt"></button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">修改虚拟机信息</h4>
+            </div>
+            <div class="modal-body">
+                <input id="v_id" style="display: none">
+                <div class="form-group">
+                    <label for="host_ip">IP地址</label>
+                    <input type="text" class="form-control" id="host_ip" placeholder="主机IP">
+                </div>
+                <div class="form-group">
+                    <label for="v_name">虚拟机名</label>
+                    <input type="text" class="form-control" id="v_name" placeholder="虚拟机名">
+                </div>
+                <select class="form-control" id="d_id2" style="width: 30%">
+                    {% for department in department_list %}
+                    <option value="{{ department['id'] }}">{{ department["name"] }}</option>
+                    {% endfor %}
+                </select>
+                <br/>
+                <select class="form-control" id="s_id2" style="width: 30%">
+
+                </select>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="bt_close">关闭</button>
+                <button type="button" class="btn btn-primary" onclick="update_vm()">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function select_change(obj) {
+        $select = $(obj)
+        var d_id = $select.val()
+        if (d_id == -1) {
+            $("#tbody").html("")
+        } else {
+            var data = {}
+            data["d_id"] = d_id
+            $.ajax({
+                type: "POST",
+                url: "{{ url_for('get_vm_list') }}",
+                data: data,
+                dataType: "json",
+                success: insert_table
+            })
+        }
+    }
+
+    function insert_table(data) {
+        if (data != null && data != "") {
+            var $table = $("#tbody")
+            var $select = $("#s_id")
+            $table.html("")
+            $select.html("")
+            var $current_tr
+            var vm_list = data["vm_list"]
+            var department_dict = data["department_dict"]
+            var staff_dict = data["staff_dict"]
+            var staff_list = data["staff_list"]
+            for (var i in vm_list) {
+                $current_tr = $(document.createElement("tr"))
+                $current_tr.attr("v_id", vm_list[i]["id"])
+                var $new_td_ip = $(document.createElement("td")).css("vertical-align", "middle")
+                var $new_td_name = $(document.createElement("td")).css("vertical-align", "middle")
+                var $new_td_dname = $(document.createElement("td")).css("vertical-align", "middle")
+                var $new_td_sname = $(document.createElement("td")).css("vertical-align", "middle")
+                var $new_td_button = $(document.createElement("td"))
+                var info = vm_list[i]["id"]+","+vm_list[i]["host_ip"]+","+vm_list[i]["name"]+","+vm_list[i]["d_id"]+","+vm_list[i]["s_id"]
+                $new_td_button.append($("<button class='btn btn-primary btn-xs' onclick='display_form(this)'>修改</button>").val(info))
+                $new_td_button.append("&nbsp;")
+                $new_td_button.append($("<button class='btn btn-danger btn-xs' onclick='delete_vm(this)'>删除</button>").val(vm_list[i]["id"]))
+                $new_td_ip.text(vm_list[i]["host_ip"])
+                $new_td_name.text(vm_list[i]["name"])
+                $new_td_dname.text(department_dict[vm_list[i]["d_id"]])
+                if (staff_dict[vm_list[i]["s_id"]] != undefined)
+                    $new_td_sname.text(staff_dict[vm_list[i]["s_id"]])
+                else{
+                    $new_td_sname.text("无")
+                }
+                $current_tr.append($new_td_ip)
+                $current_tr.append($new_td_name)
+                $current_tr.append($new_td_dname)
+                $current_tr.append($new_td_sname)
+                $current_tr.append($new_td_button)
+                $table.append($current_tr)
+            }
+            $select.append("<option value='-1'>不分配使用者</option>")
+            for (var i in staff_list){
+                var $new_option = $("<option></option>")
+                $new_option.val(staff_list[i]["id"])
+                $new_option.text(staff_list[i]["name"])
+                $select.append($new_option)
+            }
+        }
+    }
+
+    function delete_vm(obj) {
+        var $button = $(obj)
+        var v_id = $button.val()
+        var data = {}
+        data["v_id"] = v_id
+        $.ajax({
+            type: "POST",
+            url: "{{ url_for('delete_vm') }}",
+            data: data,
+            dataType: "json",
+            success: function (data) {
+                if (data != null && data != "") {
+                    if (data["result"] == "success") {
+                        alert("删除成功")
+                        $("tr[v_id=" + v_id + "]").remove()
+                    } else {
+                        alert("删除失败" + data["errorinfo"])
+                    }
+                }
+            }
+        })
+    }
+
+    function display_form(obj) {
+        var $button = $(obj)
+        var temp = $button.val()
+        var info_list = temp.split(",")
+
+        $("#d_id2").val(info_list[3])
+        $("#v_name").val(info_list[2])
+        $("#host_ip").val(info_list[1])
+        $("#v_id").val(info_list[0])
+        var data = {}
+        data["d_id"] = info_list[3]
+        $.ajax({
+            type: "POST",
+            url: "{{ url_for('get_staff_list') }}",
+            data: data,
+            dataType: "json",
+            success: function (data) {
+                if (data != null && data != ""){
+                    var staff_list = data["staff_list"]
+                    $("#s_id2").html("")
+                    $("#s_id2").append("<option value='-1'>不分配使用者</option>")
+                    for (var i in staff_list){
+                        var $new_option = $("<option></option>")
+                        $new_option.val(staff_list[i]["id"])
+                        $new_option.text(staff_list[i]["name"])
+                        $("#s_id2").append($new_option)
+                    }
+                    $("#s_id2").val(info_list[4])
+                }
+            }
+        })
+        $("#bt").click()
+    }
+
+    function update_vm() {
+        var v_id = $("#v_id").val()
+        var host_ip = $.trim($("#host_ip").val())
+        var v_name = $.trim($("#v_name").val())
+        var d_id = $("#d_id2").val()
+        var s_id = $("#s_id2").val()
+        if (v_name == null || v_name == "" || host_ip == null || host_ip == "") {
+            alert("IP和虚拟机名不能为空")
+        } else {
+            var data = {}
+            data["s_id"] = s_id
+            data["v_name"] = v_name
+            data["d_id"] = d_id
+            data["v_id"] = v_id
+            data["host_ip"] = host_ip
+            $.ajax({
+                type: "POST",
+                url: "{{ url_for('update_vm') }}",
+                data: data,
+                dataType: "json",
+                success: function (data) {
+                    if (data != null && data != "") {
+                        if (data["result"] == "success") {
+                            $("#bt_close").click()
+                            alert("修改成功")
+                            select_change($("#d_id")[0])
+                        } else {
+                            alert("修改失败" + data["errorinfo"])
+                        }
+                    }
+                }
+            })
+        }
+    }
+
+    function add_vm() {
+        var new_ip = $.trim($("#new_ip").val())
+        var new_name = $.trim($("#new_name").val())
+        var d_id = $("#d_id").val()
+        var s_id = $("#s_id").val()
+        if (new_ip == null || new_name == null || new_name == "" || new_ip == "") {
+            alert("请完整填写表单")
+        } else if (d_id == "-1") {
+            alert("请选择部门")
+        } else {
+            data = {}
+            data["host_ip"] = new_ip
+            data["name"] = new_name
+            data["d_id"] = d_id
+            data["s_id"] = s_id
+            $.ajax({
+                type: "POST",
+                url: "{{ url_for('add_vm') }}",
+                data: data,
+                dataType: "json",
+                success: function (data) {
+                    if (data != null && data != "") {
+                        if (data["result"] == "success") {
+                            alert("添加成功")
+                            $("#new_name").val("")
+                            $("#new_ip").val("")
+                            $("#s_id").html("")
+                            select_change($("#d_id")[0])
+                        } else {
+                            alert("添加失败" + data["errorinfo"])
+                        }
+                    }
+                }
+            })
+        }
+    }
+</script>
+{% endblock %}

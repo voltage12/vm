@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <script src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <span class="navbar-brand">导航</span>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            {% if active and active=='vm_manage' %}
+                            <li class="active"><a href="{{ url_for('index') }}">虚拟机</a></li>
+                            {% else %}
+                            <li><a href="{{ url_for('index') }}">虚拟机</a></li>
+                            {% endif %}
+                            {% if active and active=='admin' %}
+                            <li class="active"><a href="{{ url_for('admin') }}">管理</a></li>
+                            {% else %}
+                            <li><a href="{{ url_for('admin') }}">管理</a></li>
+                            {% endif %}
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a>当前用户:{{ username }}</a></li>
+                            <li><a href="{{ url_for('logout') }}">退出系统</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <div class="row" style="margin-top: -10px">
+                {% block body %}
+                {% endblock %}
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,1074 @@
+2017-08-23 10:54:46,479 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 10:54:58,224 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-23 10:54:59,890 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-23 10:55:01,774 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-23 10:55:03,499 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-23 10:55:03,915 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 10:55:03] "GET /index HTTP/1.1" 200 -
+2017-08-23 10:55:59,845 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweron ubuntu1 success
+2017-08-23 10:55:59,848 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 10:55:59] "POST /powermanage HTTP/1.1" 200 -
+2017-08-23 10:56:04,766 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweroff ubuntu1 success
+2017-08-23 10:56:04,766 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 10:56:04] "POST /powermanage HTTP/1.1" 200 -
+2017-08-23 10:56:18,680 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 10:56:18] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:00:20,260 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 11:00:29,469 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-23 11:00:31,179 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-23 11:00:32,981 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-23 11:00:34,869 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-23 11:00:35,297 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:00:35] "GET / HTTP/1.1" 200 -
+2017-08-23 11:00:41,581 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:00:41] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:00:44,481 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:00:44] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:00:47,286 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:00:47] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:00:49,293 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:00:49] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:00:51,920 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:00:51] "GET /index HTTP/1.1" 200 -
+2017-08-23 11:01:35,924 vmreboot_client vmreboot_client.py power_manage[line:46] ERROR poweroff ubuntu2 failed
+2017-08-23 11:01:35,925 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:01:35] "POST /powermanage HTTP/1.1" 200 -
+2017-08-23 11:01:43,705 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweron windows1 success
+2017-08-23 11:01:43,705 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:01:43] "POST /powermanage HTTP/1.1" 200 -
+2017-08-23 11:01:48,524 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweroff windows1 success
+2017-08-23 11:01:48,524 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:01:48] "POST /powermanage HTTP/1.1" 200 -
+2017-08-23 11:27:54,428 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 11:27:59,586 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-23 11:28:01,308 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-23 11:28:02,935 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-23 11:28:04,578 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-23 11:28:04,995 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:28:04] "GET /index HTTP/1.1" 200 -
+2017-08-23 11:28:11,600 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:28:11] "POST /getstate HTTP/1.1" 405 -
+2017-08-23 11:28:16,132 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:28:16] "POST /getstate HTTP/1.1" 405 -
+2017-08-23 11:28:17,149 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:28:17] "POST /getstate HTTP/1.1" 405 -
+2017-08-23 11:28:19,900 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:28:19] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-23 11:29:20,621 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:29:20] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:29:30,917 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:29:30] "POST /getstate HTTP/1.1" 405 -
+2017-08-23 11:29:33,173 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:29:33] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-23 11:30:02,777 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 11:30:08,080 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-23 11:30:10,062 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-23 11:30:11,716 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-23 11:30:13,377 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-23 11:30:13,765 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:30:13] "GET /index HTTP/1.1" 200 -
+2017-08-23 11:30:21,094 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-23 11:30:21,094 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:30:21] "POST /getstate HTTP/1.1" 200 -
+2017-08-23 11:30:30,696 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-23 11:30:30,696 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:30:30] "POST /getstate HTTP/1.1" 200 -
+2017-08-23 11:30:36,038 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:30:36] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-23 11:30:54,372 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-23 11:30:54,372 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:30:54] "POST /getstate HTTP/1.1" 200 -
+2017-08-23 11:34:58,715 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 11:35:08,106 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-23 11:35:10,103 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-23 11:35:11,741 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-23 11:35:14,022 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-23 11:35:14,365 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:35:14] "GET /index HTTP/1.1" 200 -
+2017-08-23 11:37:05,956 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:on
+2017-08-23 11:37:05,959 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:37:05] "POST /getstate HTTP/1.1" 200 -
+2017-08-23 11:37:36,539 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 11:37:46,988 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-23 11:37:48,577 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-23 11:37:50,234 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-23 11:37:51,890 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-23 11:37:52,242 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:37:52] "GET /index HTTP/1.1" 200 -
+2017-08-23 11:39:53,562 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweron ubuntu1 success
+2017-08-23 11:39:53,562 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:39:53] "POST /powermanage HTTP/1.1" 200 -
+2017-08-23 11:40:05,302 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweron ubuntu2 success
+2017-08-23 11:40:09,000 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweron windows1 success
+2017-08-23 11:40:11,368 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweron windows2 success
+2017-08-23 11:40:11,368 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:40:11] "POST /batch_powermanage HTTP/1.1" 200 -
+2017-08-23 11:40:23,715 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:on
+2017-08-23 11:40:23,715 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:40:23] "POST /getstate HTTP/1.1" 200 -
+2017-08-23 11:40:39,003 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-23 11:40:39,003 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:40:39] "POST /getstate HTTP/1.1" 200 -
+2017-08-23 11:40:47,286 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-23 11:40:47,286 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:40:47] "POST /getstate HTTP/1.1" 200 -
+2017-08-23 11:41:30,291 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:41:30] "GET /index HTTP/1.1" 200 -
+2017-08-23 11:41:49,968 vmreboot_client vmreboot_client.py power_manage[line:46] ERROR poweroff ubuntu1 failed
+2017-08-23 11:41:52,055 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweroff ubuntu2 success
+2017-08-23 11:41:54,105 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweroff windows1 success
+2017-08-23 11:41:56,447 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweroff windows2 success
+2017-08-23 11:41:56,447 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:41:56] "POST /batch_powermanage HTTP/1.1" 200 -
+2017-08-23 11:42:07,684 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:42:07] "GET /index HTTP/1.1" 200 -
+2017-08-23 11:42:09,050 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:42:09] "GET /index HTTP/1.1" 200 -
+2017-08-23 11:42:13,433 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:42:13] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:42:14,532 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:42:14] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:42:16,508 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:42:16] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:42:17,692 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:42:17] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:42:19,229 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:42:19] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:42:19,752 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:42:19] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:42:27,296 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:42:27] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:42:27,900 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:42:27] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:42:30,624 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:42:30] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:43:19,458 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:43:19] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:43:24,303 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:43:24] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:43:53,210 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:43:53] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:44:12,849 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:44:12] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:44:14,621 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:44:14] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:44:42,526 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:44:42] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:44:43,078 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:44:43] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:44:43,601 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:44:43] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:44:44,051 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:44:44] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:44:45,862 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:44:45] "GET /index HTTP/1.1" 200 -
+2017-08-23 11:47:15,210 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-23 11:47:15,210 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:47:15] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:47:16,830 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:47:16] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:47:20,745 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:47:20] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:47:27,651 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-23 11:47:29,584 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-23 11:47:29,587 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:47:29] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 11:47:31,293 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 11:47:31] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 14:18:01,323 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 14:18:36,834 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 14:18:36] "GET /test HTTP/1.1" 500 -
+2017-08-23 14:19:09,603 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 14:19:11,884 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 14:19:11] "GET /test HTTP/1.1" 200 -
+2017-08-23 14:20:14,319 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 14:20:16,287 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 14:20:16] "GET /test HTTP/1.1" 200 -
+2017-08-23 14:26:01,943 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 14:26:01] "GET /test HTTP/1.1" 200 -
+2017-08-23 14:26:07,249 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 14:26:08,939 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 14:26:08] "GET /test HTTP/1.1" 200 -
+2017-08-23 14:26:49,899 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-23 14:26:51,480 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-23 14:26:53,131 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-23 14:26:54,705 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-23 14:26:55,088 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 14:26:55] "GET /index HTTP/1.1" 200 -
+2017-08-23 14:26:58,639 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 14:26:58] "GET /index HTTP/1.1" 200 -
+2017-08-23 14:27:01,783 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 14:27:01] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 14:27:03,890 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 14:27:03] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 14:27:06,059 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 14:27:06] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 14:27:07,093 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 14:27:07] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-23 14:27:13,204 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 14:27:13] "GET /index HTTP/1.1" 200 -
+2017-08-23 14:27:21,329 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 14:27:21] "GET /test HTTP/1.1" 200 -
+2017-08-23 14:30:37,577 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 14:30:40,911 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 14:30:40] "GET /test HTTP/1.1" 200 -
+2017-08-23 14:53:54,758 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 14:53:59,585 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 14:53:59] "GET /test HTTP/1.1" 500 -
+2017-08-23 14:54:21,895 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 14:54:23,751 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 14:54:23] "GET /test HTTP/1.1" 200 -
+2017-08-23 14:58:10,175 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 14:58:12,221 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 14:58:12] "GET /test HTTP/1.1" 200 -
+2017-08-23 15:08:16,965 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 15:08:22,068 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-23 15:08:23,711 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-23 15:08:25,300 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-23 15:08:26,888 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-23 15:08:27,293 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:08:27] "GET /index HTTP/1.1" 200 -
+2017-08-23 15:10:29,203 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 15:10:34,479 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-23 15:10:36,221 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-23 15:10:37,875 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-23 15:10:39,534 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-23 15:10:39,981 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:10:39] "GET /index HTTP/1.1" 200 -
+2017-08-23 15:11:41,766 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 15:11:51,428 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-23 15:11:53,048 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-23 15:11:54,739 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-23 15:11:56,338 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-23 15:11:57,533 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:11:57] "GET /index HTTP/1.1" 200 -
+2017-08-23 15:13:56,106 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:13:56] "GET /logout HTTP/1.1" 302 -
+2017-08-23 15:13:56,382 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:13:56] "GET /loginpage HTTP/1.1" 200 -
+2017-08-23 15:14:01,270 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:14:01] "POST /login HTTP/1.1" 302 -
+2017-08-23 15:14:03,295 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:14:03] "GET /index HTTP/1.1" 200 -
+2017-08-23 15:14:06,934 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:14:06] "GET /logout HTTP/1.1" 302 -
+2017-08-23 15:14:07,252 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:14:07] "GET /loginpage HTTP/1.1" 200 -
+2017-08-23 15:14:14,302 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:14:14] "GET /test HTTP/1.1" 200 -
+2017-08-23 15:22:51,756 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 15:22:54,104 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:22:54] "GET /test HTTP/1.1" 200 -
+2017-08-23 15:23:23,478 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 15:23:24,367 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:23:24] "GET /test HTTP/1.1" 200 -
+2017-08-23 15:30:36,515 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 15:30:38,291 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:30:38] "GET /test HTTP/1.1" 200 -
+2017-08-23 15:31:13,964 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 15:31:15,524 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:31:15] "GET /test HTTP/1.1" 200 -
+2017-08-23 15:31:51,457 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 15:31:52,896 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:31:52] "GET /test HTTP/1.1" 200 -
+2017-08-23 15:33:12,012 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 15:33:15,115 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:33:15] "GET /test HTTP/1.1" 200 -
+2017-08-23 15:34:41,270 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 15:34:42,389 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:34:42] "GET /test HTTP/1.1" 200 -
+2017-08-23 15:35:05,018 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 15:35:06,011 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:35:06] "GET /test HTTP/1.1" 200 -
+2017-08-23 15:35:58,391 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 15:35:59,296 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:35:59] "GET /test HTTP/1.1" 200 -
+2017-08-23 15:37:28,950 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 15:37:31,460 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:37:31] "GET /test HTTP/1.1" 200 -
+2017-08-23 15:37:40,363 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:37:40] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-23 15:39:02,225 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 15:39:03,246 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:39:03] "GET /test HTTP/1.1" 200 -
+2017-08-23 15:39:47,685 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 15:39:49,012 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:39:49] "GET /test HTTP/1.1" 200 -
+2017-08-23 15:39:53,005 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:39:53] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-23 15:42:29,309 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 15:42:31,927 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:42:31] "GET /test HTTP/1.1" 200 -
+2017-08-23 15:44:30,057 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 15:44:42,869 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 15:44:45,414 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 15:44:45] "GET /test HTTP/1.1" 200 -
+2017-08-23 17:12:16,867 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 17:12:19,448 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 17:12:19] "GET /index HTTP/1.1" 302 -
+2017-08-23 17:12:19,721 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 17:12:19] "GET /loginpage HTTP/1.1" 200 -
+2017-08-23 17:12:44,228 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 17:24:33,242 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 17:24:33] "GET /index HTTP/1.1" 302 -
+2017-08-23 17:24:33,518 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 17:24:33] "GET /loginpage HTTP/1.1" 200 -
+2017-08-23 17:24:41,964 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 17:24:41] "POST /login HTTP/1.1" 302 -
+2017-08-23 17:24:44,963 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-23 17:24:46,625 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-23 17:24:48,258 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-23 17:24:49,899 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-23 17:24:50,290 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 17:24:50] "GET /index HTTP/1.1" 200 -
+2017-08-23 17:24:57,359 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 17:24:57] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-23 17:25:01,610 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 17:25:01] "GET /logout HTTP/1.1" 302 -
+2017-08-23 17:25:01,926 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 17:25:01] "GET /loginpage HTTP/1.1" 200 -
+2017-08-23 17:25:02,333 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 17:25:02] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-23 17:25:08,411 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 17:25:08] "POST /login HTTP/1.1" 302 -
+2017-08-23 17:25:09,868 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 17:25:09] "GET /index HTTP/1.1" 200 -
+2017-08-23 17:25:10,479 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 17:25:10] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-23 17:26:13,109 vmreboot_client vmreboot_client.py power_manage[line:46] ERROR poweroff ubuntu1 failed
+2017-08-23 17:26:14,921 vmreboot_client vmreboot_client.py power_manage[line:46] ERROR poweroff ubuntu2 failed
+2017-08-23 17:26:14,921 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 17:26:14] "POST /batch_powermanage HTTP/1.1" 200 -
+2017-08-23 17:26:20,598 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweron ubuntu1 success
+2017-08-23 17:26:23,065 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweron ubuntu2 success
+2017-08-23 17:26:23,065 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 17:26:23] "POST /batch_powermanage HTTP/1.1" 200 -
+2017-08-23 17:26:31,227 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweroff ubuntu1 success
+2017-08-23 17:26:31,227 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 17:26:31] "POST /powermanage HTTP/1.1" 200 -
+2017-08-23 17:26:34,988 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweroff ubuntu2 success
+2017-08-23 17:26:34,988 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 17:26:34] "POST /powermanage HTTP/1.1" 200 -
+2017-08-23 19:56:11,041 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 19:56:19,492 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 19:56:19] "GET / HTTP/1.1" 302 -
+2017-08-23 19:56:19,540 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 19:56:19] "GET /loginpage HTTP/1.1" 200 -
+2017-08-23 19:56:20,130 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 19:56:20] "GET /favicon.ico HTTP/1.1" 404 -
+2017-08-23 19:56:24,965 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 19:56:24] "GET /test HTTP/1.1" 200 -
+2017-08-23 19:56:37,979 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 19:56:37] "GET /index HTTP/1.1" 302 -
+2017-08-23 19:56:38,259 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 19:56:38] "GET /loginpage HTTP/1.1" 200 -
+2017-08-23 19:56:50,432 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 19:56:50] "POST /login HTTP/1.1" 302 -
+2017-08-23 19:57:14,086 vmreboot_client vmreboot_client.py get_power_state[line:79] ERROR get power state ubuntu1:failed
+2017-08-23 19:57:35,103 vmreboot_client vmreboot_client.py get_power_state[line:79] ERROR get power state ubuntu2:failed
+2017-08-23 19:57:56,131 vmreboot_client vmreboot_client.py get_power_state[line:79] ERROR get power state windows1:failed
+2017-08-23 19:58:10,815 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 19:58:10,867 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 19:58:10] "GET /test HTTP/1.1" 200 -
+2017-08-23 19:58:15,639 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 19:58:15] "GET /test HTTP/1.1" 200 -
+2017-08-23 19:58:27,641 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 19:58:27] "GET /logout HTTP/1.1" 302 -
+2017-08-23 19:58:27,905 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 19:58:27] "GET /loginpage HTTP/1.1" 200 -
+2017-08-23 19:58:33,144 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 19:58:33] "GET /test HTTP/1.1" 302 -
+2017-08-23 19:58:33,444 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 19:58:33] "GET /loginpage HTTP/1.1" 200 -
+2017-08-23 19:59:22,175 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 19:59:22] "POST /login HTTP/1.1" 302 -
+2017-08-23 19:59:44,623 vmreboot_client vmreboot_client.py get_power_state[line:79] ERROR get power state ubuntu1:failed
+2017-08-23 20:00:05,633 vmreboot_client vmreboot_client.py get_power_state[line:79] ERROR get power state ubuntu2:failed
+2017-08-23 20:00:26,721 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 20:00:26,817 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 20:00:26] "GET /loginpage HTTP/1.1" 302 -
+2017-08-23 20:00:44,562 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-23 20:00:44,798 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [23/Aug/2017 20:00:44] "GET /loginpage HTTP/1.1" 302 -
+2017-08-23 20:01:19,742 vmreboot_client vmreboot_client.py get_power_state[line:79] ERROR get power state ubuntu1:failed
+2017-08-24 08:41:40,761 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 08:41:56,991 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 08:41:56] "GET / HTTP/1.1" 302 -
+2017-08-24 08:41:57,262 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 08:41:57] "GET /loginpage HTTP/1.1" 200 -
+2017-08-24 08:41:57,314 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 08:41:57] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 -
+2017-08-24 08:41:57,617 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 08:41:57] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-24 08:41:57,625 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 08:41:57] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+2017-08-24 08:41:58,142 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 08:41:58] "GET /favicon.ico HTTP/1.1" 404 -
+2017-08-24 08:42:00,187 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 08:42:00] "GET /test HTTP/1.1" 200 -
+2017-08-24 10:04:59,075 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 10:05:08,085 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:05:08] "GET /change_passwd_page HTTP/1.1" 302 -
+2017-08-24 10:05:08,116 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:05:08] "GET /loginpage HTTP/1.1" 200 -
+2017-08-24 10:05:17,899 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:05:17] "POST /login HTTP/1.1" 302 -
+2017-08-24 10:05:39,860 vmreboot_client vmreboot_client.py get_power_state[line:79] ERROR get power state ubuntu1:failed
+2017-08-24 10:06:00,864 vmreboot_client vmreboot_client.py get_power_state[line:79] ERROR get power state ubuntu2:failed
+2017-08-24 10:06:19,363 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 10:06:21,996 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:06:21] "GET /login HTTP/1.1" 405 -
+2017-08-24 10:06:29,787 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:06:29] "POST /login HTTP/1.1" 302 -
+2017-08-24 10:06:32,569 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-24 10:06:34,224 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-24 10:06:35,934 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-24 10:06:37,591 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-24 10:06:38,017 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:06:38] "GET /index HTTP/1.1" 200 -
+2017-08-24 10:06:38,352 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:06:38] "GET /static/img/pic_off.jpg HTTP/1.1" 200 -
+2017-08-24 10:06:46,886 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:06:46] "GET /change_passwd_page HTTP/1.1" 500 -
+2017-08-24 10:07:25,930 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 10:07:27,548 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:07:27] "GET /change_passwd_page HTTP/1.1" 200 -
+2017-08-24 10:07:50,250 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:07:50] "POST /changepassword HTTP/1.1" 500 -
+2017-08-24 10:08:17,099 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 10:08:18,523 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:08:18] "GET /change_passwd_page HTTP/1.1" 200 -
+2017-08-24 10:08:26,597 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:08:26] "POST /changepassword HTTP/1.1" 200 -
+2017-08-24 10:08:33,227 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:08:33] "POST /changepassword HTTP/1.1" 200 -
+2017-08-24 10:08:39,198 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:08:39] "POST /changepassword HTTP/1.1" 200 -
+2017-08-24 10:09:54,542 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 10:09:58,800 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:09:58] "POST /changepassword HTTP/1.1" 200 -
+2017-08-24 10:10:05,516 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:10:05] "POST /changepassword HTTP/1.1" 200 -
+2017-08-24 10:10:08,472 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:10:08] "GET /logout HTTP/1.1" 302 -
+2017-08-24 10:10:08,752 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:10:08] "GET /loginpage HTTP/1.1" 200 -
+2017-08-24 10:10:15,562 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:10:15] "POST /login HTTP/1.1" 302 -
+2017-08-24 10:10:20,219 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-24 10:10:21,862 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-24 10:10:23,530 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-24 10:10:25,220 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-24 10:10:25,580 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:10:25] "GET /index HTTP/1.1" 200 -
+2017-08-24 10:11:32,534 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:11:32] "GET /test HTTP/1.1" 200 -
+2017-08-24 10:41:02,104 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:41:02] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-24 10:45:54,114 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 10:45:59,900 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:45:59] "GET /add_user_page HTTP/1.1" 200 -
+2017-08-24 10:46:15,874 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 10:46:17,212 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:46:17] "GET /add_user_page HTTP/1.1" 200 -
+2017-08-24 10:47:16,335 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 10:47:20,222 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:47:20] "GET /add_user_page HTTP/1.1" 200 -
+2017-08-24 10:47:31,094 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 10:47:31] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-24 11:42:46,036 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 11:42:59,814 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 11:42:59] "GET /add_user_page HTTP/1.1" 200 -
+2017-08-24 11:43:24,611 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 11:43:24] "POST /add_user HTTP/1.1" 405 -
+2017-08-24 11:43:42,701 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 11:43:46,555 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 11:43:46] "POST /add_user HTTP/1.1" 200 -
+2017-08-24 11:44:20,634 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 11:44:20] "GET /add_user_page HTTP/1.1" 200 -
+2017-08-24 11:44:27,362 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 11:44:27] "POST /add_user HTTP/1.1" 200 -
+2017-08-24 11:45:17,743 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 11:45:20,258 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 11:45:20] "GET /add_user_page HTTP/1.1" 200 -
+2017-08-24 11:45:32,514 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 11:45:32] "POST /add_user HTTP/1.1" 200 -
+2017-08-24 11:45:36,017 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 11:45:36] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-24 11:48:23,377 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 11:48:25,328 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 11:48:25] "GET /add_user_page HTTP/1.1" 200 -
+2017-08-24 11:48:25,829 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 11:48:25] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-24 11:48:31,727 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 11:48:31] "POST /add_user HTTP/1.1" 200 -
+2017-08-24 11:52:53,237 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 11:52:56,415 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 11:52:56] "GET /add_user_page HTTP/1.1" 200 -
+2017-08-24 11:53:04,959 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 11:53:04] "POST /add_user HTTP/1.1" 200 -
+2017-08-24 14:08:58,621 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 14:09:04,555 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-24 14:09:06,341 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-24 14:09:08,079 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-24 14:09:09,883 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-24 14:09:10,272 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:09:10] "GET /index HTTP/1.1" 200 -
+2017-08-24 14:09:21,137 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:09:21] "GET /index HTTP/1.1" 200 -
+2017-08-24 14:09:23,677 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:09:23] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-24 14:09:27,169 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:09:27] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-24 14:14:42,198 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 14:14:50,831 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:14:50] "GET /admin HTTP/1.1" 500 -
+2017-08-24 14:15:22,997 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 14:15:24,477 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:15:24] "GET /admin HTTP/1.1" 200 -
+2017-08-24 14:16:26,150 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 14:16:28,759 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:16:28] "GET /admin HTTP/1.1" 200 -
+2017-08-24 14:16:59,108 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 14:17:00,689 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:17:00] "GET /admin HTTP/1.1" 200 -
+2017-08-24 14:18:15,648 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 14:18:17,427 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:18:17] "GET /admin HTTP/1.1" 200 -
+2017-08-24 14:18:21,500 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:18:21] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-08-24 14:18:23,478 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:18:23] "GET /admin/change_passwd_page HTTP/1.1" 200 -
+2017-08-24 14:18:29,708 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:18:29] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-08-24 14:19:47,739 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:19:47] "GET /logout HTTP/1.1" 302 -
+2017-08-24 14:19:48,011 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:19:48] "GET /loginpage HTTP/1.1" 200 -
+2017-08-24 14:19:55,239 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:19:55] "POST /login HTTP/1.1" 302 -
+2017-08-24 14:19:57,937 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-24 14:19:59,612 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-24 14:19:59,836 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:19:59] "GET /index HTTP/1.1" 200 -
+2017-08-24 14:20:02,547 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:20:02] "GET /admin HTTP/1.1" 200 -
+2017-08-24 14:20:04,947 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:20:04] "GET /admin/change_passwd_page HTTP/1.1" 200 -
+2017-08-24 14:20:59,117 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:20:59] "POST /admin/changepassword HTTP/1.1" 200 -
+2017-08-24 14:21:09,873 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:21:09] "POST /admin/changepassword HTTP/1.1" 200 -
+2017-08-24 14:21:56,982 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 14:21:58,962 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:21:58] "POST /admin/changepassword HTTP/1.1" 200 -
+2017-08-24 14:22:13,832 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:22:13] "GET /logout HTTP/1.1" 302 -
+2017-08-24 14:22:14,095 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:22:14] "GET /loginpage HTTP/1.1" 200 -
+2017-08-24 14:22:19,436 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:22:19] "POST /login HTTP/1.1" 302 -
+2017-08-24 14:22:19,750 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:22:19] "GET /loginpage HTTP/1.1" 200 -
+2017-08-24 14:22:25,593 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:22:25] "POST /login HTTP/1.1" 302 -
+2017-08-24 14:22:28,662 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-24 14:22:30,406 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-24 14:22:32,142 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-24 14:22:33,802 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-24 14:22:34,237 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:22:34] "GET /index HTTP/1.1" 200 -
+2017-08-24 14:22:36,156 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:22:36] "GET /admin HTTP/1.1" 200 -
+2017-08-24 14:22:39,667 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:22:39] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-08-24 14:22:40,909 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:22:40] "GET /admin/change_passwd_page HTTP/1.1" 200 -
+2017-08-24 14:23:06,446 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:23:06] "GET /index HTTP/1.1" 200 -
+2017-08-24 14:23:09,713 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:23:09] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-24 14:23:11,343 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:23:11] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-24 14:23:47,220 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:23:47] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-24 14:23:51,835 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:23:51] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-24 14:23:55,266 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:23:55] "GET /index HTTP/1.1" 200 -
+2017-08-24 14:24:06,073 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:24:06] "GET /admin HTTP/1.1" 200 -
+2017-08-24 14:24:09,785 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:24:09] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-08-24 14:24:27,029 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:24:27] "GET /admin/change_passwd_page HTTP/1.1" 200 -
+2017-08-24 14:43:37,322 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:43:37] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-08-24 14:43:42,742 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:43:42] "GET /admin/change_passwd_page HTTP/1.1" 200 -
+2017-08-24 14:43:44,443 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:43:44] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-08-24 14:44:13,745 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 14:44:16,819 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:44:16] "GET /admin HTTP/1.1" 200 -
+2017-08-24 14:44:18,207 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 14:44:18] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-08-24 15:14:03,126 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 15:14:08,013 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:14:08] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-08-24 15:14:10,473 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:14:10] "GET /admin/change_permission_page HTTP/1.1" 405 -
+2017-08-24 15:14:30,474 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 15:14:32,633 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:14:32] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-24 15:14:49,216 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 15:14:51,738 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:14:51] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-24 15:21:33,137 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 15:21:38,514 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:21:38] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-24 15:21:53,233 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:21:53] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-24 15:22:04,948 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 15:22:07,341 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:22:07] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-24 15:22:07,831 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:22:07] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-24 15:22:30,088 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:22:30] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-24 15:22:30,582 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:22:30] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-24 15:23:14,227 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:23:14] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-24 15:24:58,927 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 15:25:01,616 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:25:01] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-24 15:25:02,108 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:25:02] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-24 15:26:35,538 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 15:26:38,411 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:26:38] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-24 15:26:38,935 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:26:38] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-24 15:26:50,854 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:26:50] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-24 15:26:51,371 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:26:51] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-24 15:27:37,117 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 15:27:50,105 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 15:27:54,615 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:27:54] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-24 15:28:01,816 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:28:01] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-24 15:28:40,643 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 15:28:43,123 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:28:43] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-24 15:30:17,150 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 15:30:19,031 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:30:19] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-24 15:30:19,505 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:30:19] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-24 15:55:19,636 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 15:55:32,754 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:55:32] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-24 15:55:39,078 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:55:39] "POST /admin/change_permission HTTP/1.1" 200 -
+2017-08-24 15:59:53,230 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:59:53] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-08-24 15:59:54,968 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:59:54] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-24 15:59:56,711 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 15:59:56] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-08-24 16:09:56,037 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 16:10:01,452 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 16:10:01] "GET /test HTTP/1.1" 200 -
+2017-08-24 16:10:41,966 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 16:10:43,205 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 16:10:43] "GET /test HTTP/1.1" 200 -
+2017-08-24 16:11:01,776 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 16:11:04,164 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 16:11:04] "GET /test HTTP/1.1" 200 -
+2017-08-24 16:13:31,478 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 16:13:51,809 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 16:13:51] "GET /test HTTP/1.1" 200 -
+2017-08-24 16:14:53,278 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 16:14:55,029 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 16:14:55] "GET /test HTTP/1.1" 200 -
+2017-08-24 16:15:09,006 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 16:15:09,916 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 16:15:09] "GET /test HTTP/1.1" 200 -
+2017-08-24 17:18:05,564 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 17:18:08,844 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 17:18:08] "GET /admin/add_department HTTP/1.1" 200 -
+2017-08-24 17:18:31,024 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 17:18:31] "GET /admin/department_manage HTTP/1.1" 404 -
+2017-08-24 17:18:37,666 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 17:18:37] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-24 17:18:52,650 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 17:18:52] "POST /admin/add_department HTTP/1.1" 405 -
+2017-08-24 17:19:34,642 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 17:19:35,850 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 17:19:35] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-24 17:19:37,873 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 17:19:37] "POST /admin/add_department HTTP/1.1" 200 -
+2017-08-24 17:19:39,110 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 17:19:39] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-24 17:19:43,387 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 17:19:43] "POST /admin/delete_department HTTP/1.1" 200 -
+2017-08-24 17:19:54,921 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 17:19:54] "POST /admin/delete_department HTTP/1.1" 200 -
+2017-08-24 17:21:56,941 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 17:21:56] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-24 17:22:42,482 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 17:22:44,326 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 17:22:44] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-24 17:22:46,830 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 17:22:46] "POST /admin/delete_department HTTP/1.1" 200 -
+2017-08-24 17:26:28,768 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 17:26:30,353 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 17:26:30] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-24 17:26:30,914 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 17:26:30] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-24 17:26:32,419 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 17:26:32] "POST /admin/delete_department HTTP/1.1" 200 -
+2017-08-24 17:28:23,464 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-24 17:28:25,535 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 17:28:25] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-24 17:28:26,095 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 17:28:26] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-24 17:28:29,054 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 17:28:29] "POST /admin/delete_department HTTP/1.1" 200 -
+2017-08-24 17:28:30,226 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 17:28:30] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-24 17:32:21,666 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [24/Aug/2017 17:32:21] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-28 10:16:38,361 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-28 10:16:45,489 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 10:16:45] "GET / HTTP/1.1" 302 -
+2017-08-28 10:16:45,516 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 10:16:45] "GET /loginpage HTTP/1.1" 200 -
+2017-08-28 10:16:45,535 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 10:16:45] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 -
+2017-08-28 10:16:45,549 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 10:16:45] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-28 10:16:45,718 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 10:16:45] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+2017-08-28 10:16:46,358 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 10:16:46] "GET /favicon.ico HTTP/1.1" 404 -
+2017-08-28 10:16:50,798 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 10:16:50] "GET /test HTTP/1.1" 200 -
+2017-08-28 14:26:00,491 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-28 14:26:06,623 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:26:06] "GET / HTTP/1.1" 302 -
+2017-08-28 14:26:06,656 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:26:06] "GET /loginpage HTTP/1.1" 200 -
+2017-08-28 14:26:07,168 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:26:07] "GET /favicon.ico HTTP/1.1" 404 -
+2017-08-28 14:26:34,378 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:26:34] "POST /login HTTP/1.1" 302 -
+2017-08-28 14:26:36,296 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-28 14:26:37,867 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-28 14:26:39,513 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-28 14:26:41,133 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-28 14:26:41,171 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:26:41] "GET /index HTTP/1.1" 200 -
+2017-08-28 14:26:41,206 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:26:41] "GET /static/img/pic_off.jpg HTTP/1.1" 200 -
+2017-08-28 14:27:21,675 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:27:21] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-28 14:28:25,105 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-28 14:28:29,188 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-28 14:28:30,837 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-28 14:28:32,453 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-28 14:28:34,105 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-28 14:28:34,146 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:28:34] "GET /index HTTP/1.1" 200 -
+2017-08-28 14:28:36,482 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:28:36] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-28 14:28:39,061 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:28:39] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-28 14:28:43,382 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:28:43] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-28 14:28:46,036 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:28:46] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-28 14:28:48,449 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:28:48] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-28 14:28:50,684 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:28:50] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-28 14:29:48,065 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-28 14:29:48,065 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:29:48] "POST /getstate HTTP/1.1" 200 -
+2017-08-28 14:29:49,588 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:29:49] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-28 14:29:56,146 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-28 14:29:56,146 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:29:56] "POST /getstate HTTP/1.1" 200 -
+2017-08-28 14:31:02,916 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:31:02] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-28 14:31:04,647 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:31:04] "GET /index HTTP/1.1" 200 -
+2017-08-28 14:31:18,898 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:31:18] "GET /admin HTTP/1.1" 200 -
+2017-08-28 14:31:20,978 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:31:20] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-08-28 14:31:22,756 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:31:22] "GET /admin/change_passwd_page HTTP/1.1" 200 -
+2017-08-28 14:31:24,387 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:31:24] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-28 14:31:40,074 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:31:40] "GET /admin/change_passwd_page HTTP/1.1" 200 -
+2017-08-28 14:31:45,030 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:31:45] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-08-28 14:31:50,900 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:31:50] "GET /admin/change_passwd_page HTTP/1.1" 200 -
+2017-08-28 14:31:51,633 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:31:51] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-28 14:31:53,522 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:31:53] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-08-28 14:32:33,092 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:32:33] "GET /admin/change_passwd_page HTTP/1.1" 200 -
+2017-08-28 14:32:35,896 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:32:35] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-08-28 14:57:59,299 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:57:59] "GET /admin/change_passwd_page HTTP/1.1" 200 -
+2017-08-28 14:58:00,427 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 14:58:00] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-28 15:14:23,961 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 15:14:23] "GET /admin/change_passwd_page HTTP/1.1" 200 -
+2017-08-28 15:14:24,835 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 15:14:24] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-08-28 15:14:34,766 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-28 15:14:47,511 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 15:14:47] "POST /admin/add_user HTTP/1.1" 200 -
+2017-08-28 15:14:54,095 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 15:14:54] "POST /admin/add_user HTTP/1.1" 200 -
+2017-08-28 15:14:58,928 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 15:14:58] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-08-28 15:15:04,814 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 15:15:04] "POST /admin/check_username HTTP/1.1" 200 -
+2017-08-28 15:15:13,892 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 15:15:13] "POST /admin/check_username HTTP/1.1" 200 -
+2017-08-28 15:15:19,871 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 15:15:19] "POST /admin/check_username HTTP/1.1" 200 -
+2017-08-28 15:15:26,345 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 15:15:26] "POST /admin/check_username HTTP/1.1" 200 -
+2017-08-28 15:28:52,379 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [28/Aug/2017 15:28:52] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-29 09:47:50,562 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-29 09:47:58,877 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:47:58] "GET / HTTP/1.1" 302 -
+2017-08-29 09:47:58,911 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:47:58] "GET /loginpage HTTP/1.1" 200 -
+2017-08-29 09:47:58,997 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:47:58] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 -
+2017-08-29 09:47:59,307 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:47:59] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-29 09:47:59,317 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:47:59] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+2017-08-29 09:48:01,118 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:48:01] "GET /favicon.ico HTTP/1.1" 404 -
+2017-08-29 09:48:08,238 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:48:08] "POST /login HTTP/1.1" 302 -
+2017-08-29 09:48:08,557 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:48:08] "GET /loginpage HTTP/1.1" 200 -
+2017-08-29 09:48:15,664 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:48:15] "POST /login HTTP/1.1" 302 -
+2017-08-29 09:48:18,241 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-29 09:48:20,528 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-29 09:48:20,579 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:48:20] "GET /index HTTP/1.1" 200 -
+2017-08-29 09:48:20,639 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:48:20] "GET /static/img/pic_off.jpg HTTP/1.1" 200 -
+2017-08-29 09:48:24,661 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:48:24] "GET /index HTTP/1.1" 200 -
+2017-08-29 09:49:32,299 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:49:32] "GET /admin HTTP/1.1" 200 -
+2017-08-29 09:49:35,500 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:49:35] "GET /admin/change_passwd_page HTTP/1.1" 200 -
+2017-08-29 09:50:09,883 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:50:09] "GET /logout HTTP/1.1" 302 -
+2017-08-29 09:50:10,130 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:50:10] "GET /loginpage HTTP/1.1" 200 -
+2017-08-29 09:50:15,172 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:50:15] "POST /login HTTP/1.1" 302 -
+2017-08-29 09:50:15,489 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:50:15] "GET /loginpage HTTP/1.1" 200 -
+2017-08-29 09:50:22,207 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:50:22] "POST /login HTTP/1.1" 302 -
+2017-08-29 09:50:25,688 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-29 09:50:28,105 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-29 09:50:28,120 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:50:28] "GET /index HTTP/1.1" 200 -
+2017-08-29 09:50:37,003 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:50:37] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-29 09:50:37,962 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:50:37] "GET /admin HTTP/1.1" 200 -
+2017-08-29 09:50:46,702 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:50:46] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-08-29 09:53:40,409 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:53:40] "GET /admin/change_passwd_page HTTP/1.1" 200 -
+2017-08-29 09:54:32,333 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:54:32] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-29 09:56:10,046 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:56:10] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-29 09:56:11,501 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 09:56:11] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-29 10:01:58,334 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 10:01:58] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-29 10:42:36,554 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-29 10:42:41,543 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 10:42:41] "GET /admin/change_passwd_page HTTP/1.1" 200 -
+2017-08-29 10:42:42,886 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 10:42:42] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-29 10:42:49,129 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 10:42:49] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-29 10:43:20,405 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-29 10:43:22,052 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 10:43:22] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-29 10:43:22,678 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 10:43:22] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-29 10:43:25,130 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 10:43:25] "POST /admin/get_permission HTTP/1.1" 200 -
+2017-08-29 10:45:08,028 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-29 10:45:10,571 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 10:45:10] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-29 10:45:11,094 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 10:45:11] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-29 10:45:13,119 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 10:45:13] "POST /admin/get_permission HTTP/1.1" 200 -
+2017-08-29 10:45:17,552 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 10:45:17] "POST /admin/get_permission HTTP/1.1" 200 -
+2017-08-29 10:45:22,092 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 10:45:22] "POST /admin/get_permission HTTP/1.1" 200 -
+2017-08-29 10:46:29,275 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-29 10:46:31,143 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 10:46:31] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-29 10:46:31,671 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 10:46:31] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-29 10:46:33,950 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 10:46:33] "POST /admin/get_permission HTTP/1.1" 200 -
+2017-08-29 10:47:32,319 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-29 10:47:35,377 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 10:47:35] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-29 10:47:35,962 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 10:47:35] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-29 10:47:38,315 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 10:47:38] "POST /admin/get_permission HTTP/1.1" 200 -
+2017-08-29 10:47:41,050 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 10:47:41] "POST /admin/get_permission HTTP/1.1" 200 -
+2017-08-29 10:50:21,127 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-29 10:50:49,696 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 10:50:49] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-29 10:50:53,065 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 10:50:53] "POST /admin/get_permission HTTP/1.1" 200 -
+2017-08-29 21:28:53,156 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-29 21:34:06,668 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:34:06] "GET / HTTP/1.1" 302 -
+2017-08-29 21:34:06,714 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:34:06] "GET /loginpage HTTP/1.1" 200 -
+2017-08-29 21:34:06,787 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:34:06] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 -
+2017-08-29 21:34:07,100 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:34:07] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-29 21:34:07,107 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:34:07] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+2017-08-29 21:34:07,610 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:34:07] "GET /favicon.ico HTTP/1.1" 404 -
+2017-08-29 21:34:11,597 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:34:11] "POST /login HTTP/1.1" 302 -
+2017-08-29 21:34:14,777 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-29 21:34:17,211 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-29 21:34:19,965 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-29 21:34:22,584 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-29 21:34:22,594 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:34:22] "GET /index HTTP/1.1" 500 -
+2017-08-29 21:34:22,601 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:34:22] "POST /login HTTP/1.1" 302 -
+2017-08-29 21:34:23,036 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:34:23] "GET /index HTTP/1.1" 200 -
+2017-08-29 21:34:23,163 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:34:23] "GET /static/img/pic_off.jpg HTTP/1.1" 200 -
+2017-08-29 21:35:43,309 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-29 21:36:25,792 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-29 21:36:25,917 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-29 21:36:25,926 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-29 21:36:26,223 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-29 21:36:26,287 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:36:26] "GET /index HTTP/1.1" 200 -
+2017-08-29 21:36:34,938 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:36:34] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-29 21:36:36,073 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:36:36] "GET /index HTTP/1.1" 200 -
+2017-08-29 21:36:36,995 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:36:36] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-29 21:36:45,129 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:36:45] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-29 21:36:46,820 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:36:46] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-29 21:36:50,392 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:36:50] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-29 21:36:52,551 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:36:52] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-29 21:36:54,139 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:36:54] "GET /index HTTP/1.1" 200 -
+2017-08-29 21:36:54,930 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:36:54] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-29 21:40:38,639 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:40:38] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-29 21:40:45,446 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:40:45] "GET /index HTTP/1.1" 200 -
+2017-08-29 21:40:46,292 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:40:46] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-29 21:40:55,491 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:40:55] "GET /index HTTP/1.1" 200 -
+2017-08-29 21:40:56,339 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:40:56] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-29 21:40:58,786 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:40:58] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-29 21:42:30,267 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:42:30] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-29 21:42:33,153 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:42:33] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-29 21:42:35,790 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:42:35] "GET /index HTTP/1.1" 200 -
+2017-08-29 21:42:36,391 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:42:36] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-29 21:42:40,484 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:42:40] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-29 21:42:42,804 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:42:42] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-29 21:42:46,835 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:42:46] "GET /index HTTP/1.1" 200 -
+2017-08-29 21:42:47,550 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [29/Aug/2017 21:42:47] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-30 11:28:17,544 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 11:28:22,845 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:28:22] "GET / HTTP/1.1" 302 -
+2017-08-30 11:28:22,906 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:28:22] "GET /loginpage HTTP/1.1" 200 -
+2017-08-30 11:28:22,966 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:28:22] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 -
+2017-08-30 11:28:23,095 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:28:23] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-30 11:28:23,314 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:28:23] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+2017-08-30 11:28:23,838 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:28:23] "GET /favicon.ico HTTP/1.1" 404 -
+2017-08-30 11:28:29,189 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:28:29] "POST /login HTTP/1.1" 302 -
+2017-08-30 11:28:32,904 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-30 11:28:33,037 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-30 11:28:33,044 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-30 11:28:33,721 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-30 11:28:33,815 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:28:33] "GET /index HTTP/1.1" 200 -
+2017-08-30 11:28:33,866 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:28:33] "GET /static/img/pic_off.jpg HTTP/1.1" 200 -
+2017-08-30 11:28:38,470 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:28:38] "GET /admin HTTP/1.1" 200 -
+2017-08-30 11:28:40,048 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:28:40] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-08-30 11:28:41,793 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:28:41] "GET /admin/change_passwd_page HTTP/1.1" 200 -
+2017-08-30 11:28:49,207 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:28:49] "POST /admin/change_passwd HTTP/1.1" 200 -
+2017-08-30 11:28:51,839 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:28:51] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-30 11:28:54,675 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:28:54] "POST /admin/get_permission HTTP/1.1" 200 -
+2017-08-30 11:28:56,371 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:28:56] "POST /admin/get_permission HTTP/1.1" 200 -
+2017-08-30 11:28:59,213 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:28:59] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-30 11:30:53,286 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 11:30:55,674 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:30:55] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-30 11:30:57,580 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:30:57] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 11:31:14,539 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 11:31:16,425 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:31:16] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 11:31:19,204 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:31:19] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 11:31:22,221 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:31:22] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-30 11:31:27,270 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:31:27] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 11:33:33,880 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 11:33:35,251 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:33:35] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 11:33:35,799 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:33:35] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-30 11:33:37,369 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:33:37] "POST /admin/get_staff_list HTTP/1.1" 500 -
+2017-08-30 11:35:02,835 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 11:35:06,870 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:35:06] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 11:35:07,494 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:35:07] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-30 11:35:08,766 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:35:08] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 11:35:11,410 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:35:11] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 11:35:20,742 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:35:20] "GET /admin/test HTTP/1.1" 404 -
+2017-08-30 11:35:37,433 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:35:37] "GET /test HTTP/1.1" 200 -
+2017-08-30 11:35:38,070 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:35:38] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-30 11:38:47,147 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 11:38:50,179 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:38:50] "GET /test HTTP/1.1" 200 -
+2017-08-30 11:38:50,650 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:38:50] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-30 11:39:02,440 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:39:02] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 11:39:02,994 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:39:02] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-30 11:39:06,687 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:39:06] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 11:47:48,928 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 11:47:53,080 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:47:53] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 11:47:53,639 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:47:53] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-30 11:47:56,051 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:47:56] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 11:47:59,898 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 11:47:59] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 14:08:53,503 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 14:08:58,268 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 14:08:58] "GET /admin/staff_manage_page HTTP/1.1" 500 -
+2017-08-30 14:09:01,253 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 14:09:01] "GET /admin/staff_manage_page HTTP/1.1" 500 -
+2017-08-30 14:15:11,170 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 14:15:13,168 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 14:15:13] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 14:15:15,604 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 14:15:15] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 14:15:21,396 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 14:15:21] "POST /admin/delete_staff HTTP/1.1" 405 -
+2017-08-30 14:16:29,937 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 14:16:31,601 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 14:16:31] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 14:16:34,206 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 14:16:34] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 14:16:36,410 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 14:16:36] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-30 14:16:39,057 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 14:16:39] "POST /admin/delete_staff HTTP/1.1" 405 -
+2017-08-30 14:17:01,144 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 14:17:02,918 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 14:17:02] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 14:17:03,489 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 14:17:03] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-30 14:17:04,790 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 14:17:04] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 14:17:05,350 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 14:17:05] "POST /admin/delete_staff HTTP/1.1" 200 -
+2017-08-30 14:18:53,959 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 14:18:55,660 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 14:18:55] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 14:18:56,250 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 14:18:56] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-30 14:18:57,798 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 14:18:57] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 14:18:58,787 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 14:18:58] "POST /admin/delete_staff HTTP/1.1" 200 -
+2017-08-30 14:19:19,514 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 14:19:19] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 14:19:20,545 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 14:19:20] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 14:19:22,734 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 14:19:22] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:05:05,618 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 15:05:08,920 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:05:08] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 15:05:10,947 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:05:10] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:31:41,514 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 15:31:44,502 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:31:44] "GET /admin/staff_manage_page HTTP/1.1" 500 -
+2017-08-30 15:32:23,152 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 15:32:24,893 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:32:24] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 15:32:27,407 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:32:27] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:32:30,772 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:32:30] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:33:18,475 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 15:33:19,696 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:33:19] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 15:33:22,018 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:33:22] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:33:23,599 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:33:23] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:33:46,631 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:33:46] "POST /admin/update_staff HTTP/1.1" 200 -
+2017-08-30 15:34:02,508 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:34:02] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:34:05,164 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:34:05] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:34:07,187 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:34:07] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:34:16,320 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:34:16] "POST /admin/update_staff HTTP/1.1" 200 -
+2017-08-30 15:34:19,476 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:34:19] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:34:26,507 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:34:26] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:34:42,064 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:34:42] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-30 15:37:10,189 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:37:10] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-30 15:39:21,493 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:39:21] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-30 15:41:57,467 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 15:42:00,234 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:42:00] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 15:42:00,764 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:42:00] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-30 15:42:02,934 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:42:02] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:42:07,155 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:42:07] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:42:13,785 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:42:13] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:42:17,698 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:42:17] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:42:39,433 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:42:39] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:42:44,883 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:42:44] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:45:54,376 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 15:45:57,205 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:45:57] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 15:45:57,738 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:45:57] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-30 15:45:59,040 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:45:59] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:46:02,996 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:46:02] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:46:07,433 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:46:07] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:46:11,387 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:46:11] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:46:19,072 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:46:19] "POST /admin/update_staff HTTP/1.1" 200 -
+2017-08-30 15:46:27,454 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:46:27] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:46:28,939 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:46:28] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:48:41,555 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 15:48:43,222 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:48:43] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 15:48:44,882 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:48:44] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:48:52,882 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:48:52] "POST /admin/update_staff HTTP/1.1" 200 -
+2017-08-30 15:48:53,981 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:48:53] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:48:56,413 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:48:56] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:49:00,083 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:49:00] "POST /admin/update_staff HTTP/1.1" 200 -
+2017-08-30 15:49:01,581 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:49:01] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:49:03,155 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:49:03] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:49:34,415 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 15:49:36,205 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:49:36] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 15:49:37,527 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:49:37] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:49:40,007 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:49:40] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 15:49:48,204 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:49:48] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-30 15:49:51,094 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:49:51] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 15:49:57,124 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 15:49:57] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 16:10:42,144 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 16:10:43,593 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:10:43] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 16:10:50,658 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:10:50] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 16:12:01,190 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 16:12:02,688 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:12:02] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 16:12:06,261 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:12:06] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 16:12:13,669 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:12:13] "POST /admin/add_staff HTTP/1.1" 200 -
+2017-08-30 16:12:18,826 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:12:18] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 16:12:20,270 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:12:20] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 16:12:59,385 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 16:13:02,253 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:13:02] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 16:13:03,850 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:13:03] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 16:13:14,714 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:13:14] "POST /admin/add_staff HTTP/1.1" 200 -
+2017-08-30 16:13:15,792 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:13:15] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 16:13:21,248 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:13:21] "POST /admin/delete_staff HTTP/1.1" 200 -
+2017-08-30 16:22:23,709 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:22:23] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-30 16:23:18,460 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 16:23:20,892 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:23:20] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 16:23:23,135 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:23:23] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 16:23:27,755 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:23:27] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 16:23:29,904 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:23:29] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 16:23:37,270 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:23:37] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-30 16:23:39,752 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:23:39] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 16:24:14,178 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:24:14] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 16:24:18,934 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:24:18] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-30 16:24:22,487 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:24:22] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 16:24:24,280 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:24:24] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 16:24:29,065 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:24:29] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-30 16:24:40,425 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:24:40] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-30 16:24:40,927 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:24:40] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-30 16:34:47,094 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 16:34:49,299 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:34:49] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-30 16:57:46,755 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 16:57:46] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-30 17:26:47,846 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 17:26:47] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-08-30 17:26:53,939 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 17:26:53] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-30 17:27:21,437 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 17:27:21] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 17:27:23,980 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 17:27:23] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 21:15:33,952 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-30 21:15:47,345 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:15:47] "GET / HTTP/1.1" 302 -
+2017-08-30 21:15:47,400 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:15:47] "GET /loginpage HTTP/1.1" 200 -
+2017-08-30 21:15:48,044 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:15:48] "GET /favicon.ico HTTP/1.1" 404 -
+2017-08-30 21:15:52,026 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:15:52] "POST /login HTTP/1.1" 302 -
+2017-08-30 21:15:55,219 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-30 21:15:55,251 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-30 21:15:55,280 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-30 21:15:57,519 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-30 21:15:57,560 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:15:57] "GET /index HTTP/1.1" 200 -
+2017-08-30 21:15:57,567 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:15:57] "POST /login HTTP/1.1" 302 -
+2017-08-30 21:15:57,972 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:15:57] "GET /index HTTP/1.1" 200 -
+2017-08-30 21:16:00,349 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:16:00] "GET /index HTTP/1.1" 200 -
+2017-08-30 21:16:01,179 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:16:01] "GET /admin HTTP/1.1" 200 -
+2017-08-30 21:16:02,407 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:16:02] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-30 21:16:04,450 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:16:04] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 21:16:12,805 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:16:12] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 21:16:17,991 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:16:17] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 21:16:28,140 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:16:28] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 21:16:35,639 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:16:35] "POST /admin/add_staff HTTP/1.1" 200 -
+2017-08-30 21:16:36,765 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:16:36] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 21:16:39,610 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:16:39] "POST /admin/delete_staff HTTP/1.1" 200 -
+2017-08-30 21:16:42,246 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:16:42] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 21:16:43,660 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:16:43] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-08-30 21:18:14,550 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:18:14] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-30 21:18:15,974 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:18:15] "GET /admin/change_passwd_page HTTP/1.1" 200 -
+2017-08-30 21:18:17,257 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:18:17] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-08-30 21:18:21,975 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [30/Aug/2017 21:18:21] "GET /admin/change_passwd_page HTTP/1.1" 200 -
+2017-08-31 10:20:04,553 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-31 10:20:15,982 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:20:15] "GET / HTTP/1.1" 302 -
+2017-08-31 10:20:16,027 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:20:16] "GET /loginpage HTTP/1.1" 200 -
+2017-08-31 10:20:16,061 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:20:16] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-31 10:20:16,071 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:20:16] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+2017-08-31 10:20:16,078 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:20:16] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 -
+2017-08-31 10:20:17,027 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:20:17] "GET /favicon.ico HTTP/1.1" 404 -
+2017-08-31 10:20:20,592 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:20:20] "POST /login HTTP/1.1" 302 -
+2017-08-31 10:20:23,163 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-08-31 10:20:23,164 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-08-31 10:20:25,968 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-08-31 10:20:26,018 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-31 10:20:26,062 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:20:26] "GET /index HTTP/1.1" 200 -
+2017-08-31 10:20:26,101 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:20:26] "GET /static/img/pic_off.jpg HTTP/1.1" 200 -
+2017-08-31 10:20:32,144 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweron ubuntu1 success
+2017-08-31 10:20:32,144 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:20:32] "POST /powermanage HTTP/1.1" 200 -
+2017-08-31 10:20:32,161 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:20:32] "GET /static/img/pic_on.jpg HTTP/1.1" 200 -
+2017-08-31 10:20:41,349 vmreboot_client vmreboot_client.py power_manage[line:49] INFO poweroff ubuntu1 success
+2017-08-31 10:20:41,349 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:20:41] "POST /powermanage HTTP/1.1" 200 -
+2017-08-31 10:20:45,034 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-08-31 10:20:45,034 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:20:45] "POST /getstate HTTP/1.1" 200 -
+2017-08-31 10:20:46,178 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:20:46] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-31 10:20:46,984 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:20:46] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-31 10:20:49,033 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:20:49] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-31 10:20:49,582 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:20:49] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-31 10:20:56,928 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:20:56] "POST /getvmlist HTTP/1.1" 200 -
+2017-08-31 10:20:58,175 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:20:58] "GET /index HTTP/1.1" 200 -
+2017-08-31 10:20:59,516 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:20:59] "GET /admin HTTP/1.1" 200 -
+2017-08-31 10:21:00,663 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:21:00] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-08-31 10:21:02,314 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:21:02] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-31 10:21:14,871 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:21:14] "POST /admin/update_department HTTP/1.1" 500 -
+2017-08-31 10:21:38,649 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-31 10:21:42,161 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:21:42] "POST /admin/update_department HTTP/1.1" 200 -
+2017-08-31 10:21:50,444 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:21:50] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-31 10:21:59,486 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:21:59] "POST /admin/update_department HTTP/1.1" 200 -
+2017-08-31 10:22:02,722 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:22:02] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-31 10:22:44,501 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-31 10:22:47,056 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:22:47] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-31 10:22:56,687 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:22:56] "POST /admin/update_department HTTP/1.1" 200 -
+2017-08-31 10:23:01,729 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:23:01] "POST /admin/update_department HTTP/1.1" 200 -
+2017-08-31 10:23:02,757 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:23:02] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-31 10:23:16,570 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:23:16] "POST /admin/update_department HTTP/1.1" 200 -
+2017-08-31 10:23:17,475 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:23:17] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-31 10:53:51,534 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:53:51] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-31 10:53:52,801 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:53:52] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-31 10:53:55,370 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:53:55] "GET /admin/change_passwd_page HTTP/1.1" 200 -
+2017-08-31 10:53:56,229 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:53:56] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-31 10:53:57,202 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 10:53:57] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-31 11:09:46,990 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 11:09:46] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-08-31 11:10:06,901 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 11:10:06] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-08-31 11:10:10,265 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 11:10:10] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-08-31 11:37:06,285 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-31 11:37:22,092 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 11:37:22] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-08-31 11:37:36,226 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-31 11:37:38,914 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 11:37:38] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-08-31 11:40:17,459 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-31 11:41:18,760 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 11:41:18] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-08-31 11:41:55,832 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-31 11:41:57,659 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 11:41:57] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-08-31 11:42:46,363 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-31 11:42:47,428 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 11:42:47] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-08-31 11:43:10,845 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-31 11:43:11,942 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 11:43:11] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-08-31 11:43:28,291 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-31 11:43:30,439 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 11:43:30] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-08-31 16:17:14,723 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-31 16:17:20,470 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 16:17:20] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-08-31 16:17:23,153 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 16:17:23] "POST /admin/get_vm_list HTTP/1.1" 405 -
+2017-08-31 16:17:41,834 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 16:17:41] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-31 16:18:00,065 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-31 16:18:02,743 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 16:18:02] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-08-31 16:18:03,280 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 16:18:03] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-31 16:18:04,600 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 16:18:04] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-08-31 16:19:07,268 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-31 16:19:08,708 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 16:19:08] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-08-31 16:19:09,289 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 16:19:09] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-31 16:19:10,391 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 16:19:10] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-08-31 16:19:37,068 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-31 16:19:38,058 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 16:19:38] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-08-31 16:19:38,622 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 16:19:38] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-31 16:19:40,098 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 16:19:40] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-08-31 16:20:07,884 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 16:20:07] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-08-31 16:21:27,294 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-31 16:21:28,733 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 16:21:28] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-08-31 16:21:30,082 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 16:21:30] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-08-31 16:21:40,422 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 16:21:40] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-08-31 16:21:45,107 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 16:21:45] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-08-31 16:21:47,046 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 16:21:47] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-08-31 17:01:14,351 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-31 17:01:16,809 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 17:01:16] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-08-31 17:01:25,426 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 17:01:25] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-08-31 17:01:28,789 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 17:01:28] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-08-31 17:19:50,955 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-31 17:19:54,088 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 17:19:54] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-08-31 17:19:56,938 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 17:19:56] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-08-31 17:20:12,648 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 17:20:12] "POST /admin/add_vm HTTP/1.1" 200 -
+2017-08-31 17:20:14,132 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 17:20:14] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-08-31 17:21:10,399 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-31 17:21:11,393 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 17:21:11] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-08-31 17:21:16,870 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 17:21:16] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-08-31 17:21:25,176 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 17:21:25] "POST /admin/delete_vm HTTP/1.1" 200 -
+2017-08-31 17:21:51,472 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-08-31 17:21:54,521 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [31/Aug/2017 17:21:54] "POST /admin/delete_vm HTTP/1.1" 200 -
+2017-09-01 09:10:18,686 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-09-01 09:10:48,533 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:10:48] "GET / HTTP/1.1" 302 -
+2017-09-01 09:10:48,585 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:10:48] "GET /loginpage HTTP/1.1" 200 -
+2017-09-01 09:10:48,626 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:10:48] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 -
+2017-09-01 09:10:48,642 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:10:48] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-09-01 09:10:48,774 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:10:48] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+2017-09-01 09:10:49,529 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:10:49] "GET /favicon.ico HTTP/1.1" 404 -
+2017-09-01 09:13:49,109 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:13:49] "POST /login HTTP/1.1" 302 -
+2017-09-01 09:13:49,325 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:13:49] "GET /loginpage HTTP/1.1" 200 -
+2017-09-01 09:13:53,707 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:13:53] "POST /login HTTP/1.1" 302 -
+2017-09-01 09:14:15,099 vmreboot_client vmreboot_client.py get_power_state[line:79] ERROR get power state ubuntu1:failed
+2017-09-01 09:14:15,099 vmreboot_client vmreboot_client.py get_power_state[line:79] ERROR get power state ubuntu2:failed
+2017-09-01 09:14:15,099 vmreboot_client vmreboot_client.py get_power_state[line:79] ERROR get power state windows1:failed
+2017-09-01 09:14:15,099 vmreboot_client vmreboot_client.py get_power_state[line:79] ERROR get power state windows2:failed
+2017-09-01 09:14:15,231 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:14:15] "GET /index HTTP/1.1" 200 -
+2017-09-01 09:14:15,596 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:14:15] "GET /static/img/pic_off.jpg HTTP/1.1" 200 -
+2017-09-01 09:14:57,656 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:14:57] "GET /admin HTTP/1.1" 200 -
+2017-09-01 09:15:14,546 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:15:14] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-09-01 09:15:17,551 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:15:17] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-09-01 09:15:20,838 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:15:20] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-09-01 09:15:51,689 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-09-01 09:15:53,631 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:15:53] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-09-01 09:15:55,654 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:15:55] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-09-01 09:15:56,732 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:15:56] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-09-01 09:16:12,861 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-09-01 09:16:15,128 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:16:15] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-09-01 09:16:16,499 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:16:16] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-09-01 09:16:17,544 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:16:17] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-09-01 09:25:04,811 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:25:04] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-09-01 09:25:17,120 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:25:17] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-09-01 09:25:18,123 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:25:18] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-09-01 09:33:05,991 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-09-01 09:33:07,748 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:33:07] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-09-01 09:33:09,715 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:33:09] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-09-01 09:33:11,628 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:33:11] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-09-01 09:33:13,331 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:33:13] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-09-01 09:33:24,347 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:33:24] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-09-01 09:34:11,236 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:34:11] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-09-01 09:34:11,805 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:34:11] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-09-01 09:34:15,129 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:34:15] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-09-01 09:34:17,133 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:34:17] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-09-01 09:40:19,395 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:40:19] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-09-01 09:40:20,991 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:40:20] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-09-01 09:40:23,888 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:40:23] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-09-01 09:40:28,938 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:40:28] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-09-01 09:42:27,146 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:42:27] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-09-01 09:42:29,077 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:42:29] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-09-01 09:43:13,602 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:43:13] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-09-01 09:53:56,504 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-09-01 09:54:02,867 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:54:02] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-09-01 09:54:06,948 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:54:06] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-09-01 09:54:28,246 _internal _internal.py _log[line:87] INFO  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-09-01 09:54:30,372 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:54:30] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-09-01 09:54:31,224 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:54:31] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-09-01 09:54:32,381 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:54:32] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-09-01 09:54:33,003 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:54:33] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-09-01 09:54:35,441 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:54:35] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-09-01 09:54:36,738 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:54:36] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-09-01 09:54:39,069 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:54:39] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-09-01 09:54:46,934 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:54:46] "POST /admin/add_staff HTTP/1.1" 200 -
+2017-09-01 09:54:48,237 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:54:48] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-09-01 09:54:49,302 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:54:49] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-09-01 09:54:51,897 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:54:51] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-09-01 09:54:59,868 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:54:59] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-09-01 09:55:04,192 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:55:04] "POST /admin/update_vm HTTP/1.1" 200 -
+2017-09-01 09:55:05,477 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:55:05] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-09-01 09:55:27,198 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:55:27] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-09-01 09:55:30,417 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:55:30] "POST /admin/update_vm HTTP/1.1" 200 -
+2017-09-01 09:55:31,865 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:55:31] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-09-01 09:55:33,086 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:55:33] "GET /admin/staff_manage_page HTTP/1.1" 200 -
+2017-09-01 09:55:36,018 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:55:36] "POST /admin/get_staff_list HTTP/1.1" 200 -
+2017-09-01 09:55:37,393 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:55:37] "POST /admin/delete_staff HTTP/1.1" 200 -
+2017-09-01 09:55:39,389 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:55:39] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-09-01 09:55:41,386 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:55:41] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-09-01 09:56:52,984 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:56:52] "POST /admin/get_vm_list HTTP/1.1" 200 -
+2017-09-01 09:56:59,134 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:56:59] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-09-01 09:57:06,597 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:57:06] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-09-01 09:57:09,522 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:57:09] "POST /admin/get_permission HTTP/1.1" 200 -
+2017-09-01 09:57:11,910 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:57:11] "POST /admin/get_permission HTTP/1.1" 200 -
+2017-09-01 09:57:24,196 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:57:24] "POST /admin/change_permission HTTP/1.1" 200 -
+2017-09-01 09:57:31,829 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:57:31] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-09-01 09:57:33,860 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:57:33] "GET /admin/change_passwd_page HTTP/1.1" 200 -
+2017-09-01 09:57:56,031 vmreboot_client vmreboot_client.py get_power_state[line:79] ERROR get power state ubuntu2:failed
+2017-09-01 09:57:56,031 vmreboot_client vmreboot_client.py get_power_state[line:79] ERROR get power state windows2:failed
+2017-09-01 09:57:56,031 vmreboot_client vmreboot_client.py get_power_state[line:79] ERROR get power state ubuntu1:failed
+2017-09-01 09:57:56,031 vmreboot_client vmreboot_client.py get_power_state[line:79] ERROR get power state windows1:failed
+2017-09-01 09:57:56,206 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:57:56] "GET /index HTTP/1.1" 200 -
+2017-09-01 09:58:46,779 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu2:off
+2017-09-01 09:58:46,794 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:58:46] "POST /getvmlist HTTP/1.1" 500 -
+2017-09-01 09:58:47,710 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:58:47] "POST /getvmlist HTTP/1.1" 200 -
+2017-09-01 09:58:52,559 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state ubuntu1:off
+2017-09-01 09:58:52,559 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:58:52] "POST /getvmlist HTTP/1.1" 500 -
+2017-09-01 09:58:53,189 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:58:53] "POST /getvmlist HTTP/1.1" 200 -
+2017-09-01 09:58:57,750 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows1:off
+2017-09-01 09:58:59,537 vmreboot_client vmreboot_client.py get_power_state[line:76] INFO get power state windows2:off
+2017-09-01 09:58:59,537 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:58:59] "POST /getvmlist HTTP/1.1" 500 -
+2017-09-01 09:58:59,562 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:58:59] "POST /getvmlist HTTP/1.1" 200 -
+2017-09-01 09:58:59,584 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:58:59] "POST /getvmlist HTTP/1.1" 200 -
+2017-09-01 09:58:59,718 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:58:59] "POST /getvmlist HTTP/1.1" 200 -
+2017-09-01 09:59:06,449 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:59:06] "POST /getvmlist HTTP/1.1" 200 -
+2017-09-01 09:59:07,997 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:59:07] "POST /getvmlist HTTP/1.1" 200 -
+2017-09-01 09:59:10,531 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:59:10] "POST /getvmlist HTTP/1.1" 200 -
+2017-09-01 09:59:11,823 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:59:11] "POST /getvmlist HTTP/1.1" 200 -
+2017-09-01 09:59:13,743 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:59:13] "GET /logout HTTP/1.1" 302 -
+2017-09-01 09:59:14,009 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:59:14] "GET /loginpage HTTP/1.1" 200 -
+2017-09-01 09:59:21,291 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:59:21] "POST /login HTTP/1.1" 302 -
+2017-09-01 09:59:21,613 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:59:21] "GET /loginpage HTTP/1.1" 200 -
+2017-09-01 09:59:25,397 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:59:25] "POST /login HTTP/1.1" 302 -
+2017-09-01 09:59:25,722 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:59:25] "GET /loginpage HTTP/1.1" 200 -
+2017-09-01 09:59:29,517 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:59:29] "POST /login HTTP/1.1" 302 -
+2017-09-01 09:59:29,842 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:59:29] "GET /loginpage HTTP/1.1" 200 -
+2017-09-01 09:59:34,861 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:59:34] "POST /login HTTP/1.1" 302 -
+2017-09-01 09:59:35,265 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:59:35] "GET /index HTTP/1.1" 200 -
+2017-09-01 09:59:40,773 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:59:40] "POST /getvmlist HTTP/1.1" 200 -
+2017-09-01 09:59:44,231 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:59:44] "POST /getvmlist HTTP/1.1" 200 -
+2017-09-01 09:59:48,841 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:59:48] "POST /getvmlist HTTP/1.1" 200 -
+2017-09-01 09:59:51,976 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:59:51] "POST /getvmlist HTTP/1.1" 200 -
+2017-09-01 09:59:54,502 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:59:54] "GET /index HTTP/1.1" 200 -
+2017-09-01 09:59:59,218 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:59:59] "GET /logout HTTP/1.1" 302 -
+2017-09-01 09:59:59,469 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 09:59:59] "GET /loginpage HTTP/1.1" 200 -
+2017-09-01 10:00:05,803 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 10:00:05] "POST /login HTTP/1.1" 302 -
+2017-09-01 10:00:06,225 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 10:00:06] "GET /index HTTP/1.1" 200 -
+2017-09-01 10:00:10,210 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 10:00:10] "GET /admin HTTP/1.1" 200 -
+2017-09-01 10:00:11,683 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 10:00:11] "GET /admin/change_passwd_page HTTP/1.1" 200 -
+2017-09-01 10:00:19,981 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 10:00:19] "POST /admin/change_passwd HTTP/1.1" 200 -
+2017-09-01 10:00:24,482 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 10:00:24] "GET /admin/add_user_page HTTP/1.1" 200 -
+2017-09-01 10:00:29,346 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 10:00:29] "GET /admin/change_permission_page HTTP/1.1" 200 -
+2017-09-01 10:00:32,407 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 10:00:32] "POST /admin/get_permission HTTP/1.1" 200 -
+2017-09-01 10:00:36,057 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 10:00:36] "POST /admin/change_permission HTTP/1.1" 200 -
+2017-09-01 10:00:40,703 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 10:00:40] "GET /admin/department_manage_page HTTP/1.1" 200 -
+2017-09-01 10:00:43,525 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 10:00:43] "GET /index HTTP/1.1" 200 -
+2017-09-01 10:00:45,699 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 10:00:45] "POST /getvmlist HTTP/1.1" 200 -
+2017-09-01 10:00:46,790 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 10:00:46] "POST /getvmlist HTTP/1.1" 200 -
+2017-09-01 10:00:49,031 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 10:00:49] "POST /getvmlist HTTP/1.1" 200 -
+2017-09-01 10:00:49,894 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 10:00:49] "POST /getvmlist HTTP/1.1" 200 -
+2017-09-01 10:00:51,846 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 10:00:51] "GET /index HTTP/1.1" 200 -
+2017-09-01 10:00:56,403 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 10:00:56] "GET /admin HTTP/1.1" 200 -
+2017-09-01 10:00:58,579 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 10:00:58] "GET /admin/vm_manage_page HTTP/1.1" 200 -
+2017-09-01 10:08:08,308 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 10:08:08] "GET /index HTTP/1.1" 200 -
+2017-09-01 10:08:09,833 _internal _internal.py _log[line:87] INFO 127.0.0.1 - - [01/Sep/2017 10:08:09] "GET /index HTTP/1.1" 200 -

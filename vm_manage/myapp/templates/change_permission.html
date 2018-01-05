@@ -1,0 +1,126 @@
+{% extends "nav.html" %}
+{% block admin %}
+<div class="panel panel-info">
+    <div class="panel-heading">填写信息</div>
+    <div class="panel-body">
+        <div class="form-group">
+            <select class="form-control" id="user_list" style="width: 30%" onchange="select_change(this)">
+                <option value="-1" selected="selected">请选择管理员</option>
+                {% for user in user_list %}
+                <option value="{{ user['id'] }}">{{ user["username"] }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <table class="table" style="text-align: center;vertical-align: middle;">
+            <thead>
+            <tr>
+                <td>部门</td>
+                <td>权限</td>
+            </tr>
+            </thead>
+            <tbody id="tbody">
+            {% for department in department_list %}
+            <tr>
+                <td style="vertical-align: middle">{{ department["name"] }}</td>
+                <td>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" d_id="{{ department['id'] }}" name="permission" value="off"/>关机
+                        </label>
+                        <label>
+                            <input type="checkbox" d_id="{{ department['id'] }}" name="permission" value="on"/>开机
+                        </label>
+                        <label>
+                            <input type="checkbox" d_id="{{ department['id'] }}" name="permission" value="reboot"/>重启
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-default" onclick="change_permission()">提交</button>
+    </div>
+</div>
+
+<script>
+    function select_change(obj) {
+        $select = $(obj)
+        var u_id = $select.val()
+        if (u_id == -1) {
+            $("input[name=permission]").prop("checked", false)
+        } else {
+            var data = {}
+            data["u_id"] = u_id
+            $.ajax({
+                type: "POST",
+                url: "{{ url_for('get_permission') }}",
+                data: data,
+                dataType: "json",
+                success: function (result) {
+                    if (result != null && result != "") {
+                        var permission_dict = result["permission_dict"]
+                        if (permission_dict != null && permission_dict != undefined) {
+                            String.prototype.format = function () {
+                                var args = arguments;
+                                return this.replace(/\{(\d+)\}/g, function (s, i) {
+                                    return args[i];
+                                });
+                            }
+                            $("input[name=permission]").prop("checked", false)
+                            for (var key in permission_dict) {
+                                for (var idx in permission_dict[key]) {
+                                    var id = "input[d_id={0}][value={1}]".format(key, permission_dict[key][idx])
+                                    $(id).prop("checked", true)
+                                }
+                            }
+                        }
+                    }
+                }
+            })
+        }
+    }
+    function change_permission() {
+        var u_id = $("#user_list").val();
+        if (u_id == "-1") {
+            alert("请选择一名管理员")
+        } else {
+            var permission_dict = {};
+            $('input[name="permission"]:checked').each(function () {
+                $checkbox = $(this)
+                if (permission_dict[$checkbox.attr("d_id")] == undefined
+                    || permission_dict[$checkbox.attr("d_id")] == null) {
+                    permission_dict[$checkbox.attr("d_id")] = $checkbox.val()
+                } else {
+                    temp = permission_dict[$checkbox.attr("d_id")]
+                    temp = temp + "," + $checkbox.val()
+                    permission_dict[$checkbox.attr("d_id")] = temp
+                }
+            });
+            data = {}
+            data["u_id"] = u_id
+            data["permission_dict"] = permission_dict
+            console.log(permission_dict)
+            console.log(data)
+            $.ajax({
+                type: "POST",
+                url: "{{ url_for('change_permission') }}",
+                data: JSON.stringify(data),
+                contentType: 'application/json; charset=UTF-8',
+                dataType: "json",
+                success: function (data) {
+                    if (data != null && data != "") {
+                        if (data["result"] == "success") {
+                            alert("添加权限成功")
+                            $('input[name="permission"]').prop("checked", false);
+                            $("#user_list").val("-1")
+                        } else {
+                            alert("添加权限失败：" + data["errorinfo"])
+                        }
+                    }
+                }
+            })
+        }
+    }
+</script>
+{% endblock %}

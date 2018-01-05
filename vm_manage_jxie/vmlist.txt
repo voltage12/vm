@@ -1,0 +1,7 @@
+poweroff:
+ubuntu1
+ubuntu2
+
+poweron:
+windows1
+windows2

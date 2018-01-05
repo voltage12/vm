@@ -1,0 +1,200 @@
+{% extends "nav.html" %}
+{% block admin %}
+<div class="panel panel-info">
+    <div class="panel-heading">添加或删除员工</div>
+    <div class="panel-body">
+        <div class="form-group">
+            <select class="form-control" id="d_id" style="width: 30%" onchange="select_change(this)">
+                <option value="-1" selected="selected">请选择部门</option>
+                {% for department in department_list %}
+                <option value="{{ department['id'] }}">{{ department["name"] }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <table class="table" style="width: 50%">
+            <tbody id="tbody">
+            </tbody>
+        </table>
+        <br/>
+        <div class="form-group">
+            <label for="new_s_name">新员工姓名</label>
+            <input type="text" id="new_s_name" class="form-control" style="width: 50%" placeholder="">
+        </div>
+        <button type="button" class="btn btn-default" onclick="add_staff()">添加员工</button>
+    </div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal" style="display:none"
+        id="bt">
+    L
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">修改员工信息</h4>
+            </div>
+            <div class="modal-body">
+                <input id="s_id" style="display: none">
+                <div class="form-group">
+                    <label for="s_name">姓名</label>
+                    <input type="text" class="form-control" id="s_name" placeholder="姓名">
+                </div>
+                <select class="form-control" id="d_id2" style="width: 30%">
+                    {% for department in department_list %}
+                    <option value="{{ department['id'] }}">{{ department["name"] }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="bt_close">关闭</button>
+                <button type="button" class="btn btn-primary" onclick="update_staff()">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function select_change(obj) {
+        $select = $(obj)
+        var d_id = $select.val()
+        if (d_id == -1) {
+            $("#tbody").html("")
+        } else {
+            var data = {}
+            data["d_id"] = d_id
+            $.ajax({
+                type: "POST",
+                url: "{{ url_for('get_staff_list') }}",
+                data: data,
+                dataType: "json",
+                success: insert_table
+            })
+        }
+    }
+
+    function insert_table(data) {
+        if (data != null && data != "") {
+            var $table = $("#tbody")
+            $table.html("")
+            var $current_tr
+            var staff_list = data["staff_list"]
+            for (var i in staff_list) {
+                $current_tr = $(document.createElement("tr"))
+                $current_tr.attr("value", staff_list[i]["id"])
+                var $new_td = $(document.createElement("td"))
+                $new_td.text(staff_list[i]["name"])
+                $current_tr.append($new_td[0])
+                $new_td.css("vertical-align", "middle")
+                var $new_td2 = $(document.createElement("td"))
+                $new_td2.append($('<button class="btn btn-danger btn-sm" type="button" onclick="delete_staff(this)">删除</button>').val(staff_list[i]["id"]))
+                $new_td2.append("&nbsp;")
+                $new_td2.append($('<button class="btn btn-primary btn-sm" type="button" onclick="display_form(this)">修改</button>').val(staff_list[i]["id"] + "," + staff_list[i]["name"] + "," + staff_list[i]["d_id"]))
+                $current_tr.append($new_td2[0])
+                $table.append($current_tr)
+            }
+        }
+    }
+
+    function delete_staff(obj) {
+        var $button = $(obj)
+        s_id = $button.val()
+        var data = {}
+        data["s_id"] = s_id
+        $.ajax({
+            type: "POST",
+            url: "{{ url_for('delete_staff') }}",
+            data: data,
+            dataType: "json",
+            success: function (data) {
+                if (data != null && data != "") {
+                    if (data["result"] == "success") {
+                        alert("删除成功")
+                        $("tr[value=" + s_id + "]").remove()
+                    } else {
+                        alert("删除失败" + data["errorinfo"])
+                    }
+                }
+            }
+        })
+    }
+
+    function display_form(obj) {
+        var $button = $(obj)
+        temp = $button.val()
+        info_list = temp.split(",")
+
+        $("#d_id2").val(info_list[2])
+        $("#s_name").val(info_list[1])
+        $("#s_id").val(info_list[0])
+        $("#bt").click()
+    }
+
+    function update_staff() {
+        var s_id = $("#s_id").val()
+        var s_name = $.trim($("#s_name").val())
+        var d_id = $("#d_id2").val()
+        if (s_name == null || s_name == "") {
+            alert("请输入姓名")
+        } else {
+            var data = {}
+            data["s_id"] = s_id
+            data["s_name"] = s_name
+            data["d_id"] = d_id
+            $.ajax({
+                type: "POST",
+                url: "{{ url_for('update_staff') }}",
+                data: data,
+                dataType: "json",
+                success: function (data) {
+                    if (data != null && data != "") {
+                        if (data["result"] == "success") {
+                            $("#bt_close").click()
+                            alert("修改成功")
+                            select_change($("#d_id")[0])
+                        } else {
+                            alert("修改失败" + data["errorinfo"])
+                        }
+                    }
+                }
+            })
+        }
+    }
+
+    function add_staff() {
+        var new_s_name = $.trim($("#new_s_name").val())
+        var d_id = $("#d_id").val()
+        if (new_s_name == null || new_s_name == "") {
+            alert("姓名不能为空")
+        } else if (d_id == "-1") {
+            alert("请选择部门")
+        } else {
+            data = {}
+            data["s_name"] = new_s_name
+            data["d_id"] = d_id
+            $.ajax({
+                type: "POST",
+                url: "{{ url_for('add_staff') }}",
+                data: data,
+                dataType: "json",
+                success: function (data) {
+                    if (data != null && data != "") {
+                        if (data["result"] == "success") {
+                            alert("添加成功")
+                            $("#new_s_name").val("")
+                            select_change($("#d_id")[0])
+                        } else {
+                            alert("添加失败" + data["errorinfo"])
+                        }
+                    }
+                }
+            })
+        }
+    }
+</script>
+{% endblock %}

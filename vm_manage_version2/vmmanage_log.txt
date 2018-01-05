@@ -1,0 +1,7 @@
+Mon, 24 Jul 2017 16:48:30 transport.py[line:1636] INFO Connected (version 2.0, client OpenSSH_7.1)
+Mon, 24 Jul 2017 16:48:30 transport.py[line:1636] INFO Authentication (keyboard-interactive) successful!
+Mon, 24 Jul 2017 16:48:31 transport.py[line:1636] INFO Connected (version 2.0, client OpenSSH_7.1)
+Mon, 24 Jul 2017 16:48:31 transport.py[line:1636] INFO Authentication (keyboard-interactive) successful!
+Mon, 24 Jul 2017 16:48:32 transport.py[line:1636] INFO Connected (version 2.0, client OpenSSH_7.1)
+Mon, 24 Jul 2017 16:48:32 transport.py[line:1636] INFO Authentication (keyboard-interactive) successful!
+Mon, 24 Jul 2017 16:48:33 vm_manage.py[line:155] INFO ESXi主机（192.168.216.128）：获取虚拟机列表
